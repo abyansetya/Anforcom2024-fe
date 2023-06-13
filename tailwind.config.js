@@ -1,8 +1,14 @@
+import plugin from 'tailwindcss/plugin'
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
   content: ['./src/**/**/*.{ts,tsx}'],
   theme: {
+    fontFamily: {
+      sans: ['var(--font-sans)'],
+      serif: ['var(--font-serif)']
+    },
     container: {
       center: true,
       padding: '2rem',
@@ -67,5 +73,20 @@ module.exports = {
       }
     }
   },
-  plugins: [require('tailwindcss-animate')]
+  plugins: [
+    require('tailwindcss-animate'),
+    plugin(function ({ addVariant, e, postcss }) {
+      addVariant('firefox', ({ container, separator }) => {
+        const isFirefoxRule = postcss.atRule({
+          name: '-moz-document',
+          params: 'url-prefix()'
+        })
+        isFirefoxRule.append(container.nodes)
+        container.append(isFirefoxRule)
+        isFirefoxRule.walkRules((rule) => {
+          rule.selector = `.${e(`firefox${separator}${rule.selector.slice(1)}`)}`
+        })
+      })
+    })
+  ]
 }
