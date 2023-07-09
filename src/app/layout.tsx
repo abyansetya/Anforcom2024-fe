@@ -1,4 +1,3 @@
-import Header from '@/components/header'
 import './globals.css'
 import { cn } from '@/lib/utils'
 import { fontSans, fontSerif } from '@/lib/fonts'
@@ -11,10 +10,7 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={cn(fontSans.variable, fontSerif.variable, 'bg-[#E8F1FF]')}>
-        <Header />
-        {children}
-      </body>
+      <body className={cn(fontSans.variable, fontSerif.variable, 'bg-[#E8F1FF]')}>{children}</body>
     </html>
   )
 }
