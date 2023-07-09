@@ -8,24 +8,24 @@ import anforcomIcon from 'public/anforcom-icon.svg'
 
 const Header = () => {
   return (
-    <nav className='flex items-center sticky top-0 z-10 w-full h-20 backdrop-filter backdrop-blur-lg bg-cpurple-5 border-b'>
-      <div className='container flex justify-between'>
+    <nav className='flex items-center sticky top-0 z-10 w-full h-20 bg-cpurple-5'>
+      <div className='container flex justify-between min-w-full'>
         <Link href='/' className='text-xl font-bold font-serif'>
           <Image src={anforcomIcon} alt='anforcom-icon' width={70} height={33} />
         </Link>
-        <div className='flex gap-4'>
+        <div className='flex gap-8'>
           {navigationConfig.map((item: NavigationType) => (
             <div
               key={item.name}
-              className='flex cursor-pointer font-serif text-lg hover:bg-cpurple-4 hover:bg-opacity-100 px-4 py-2 bg-opacity-100 focus:bg-cpurple-3 text-cgray-0 rounded-md items-center'
+              className='flex cursor-pointer font-serif text-lg hover:bg-cpurple-4 hover:bg-opacity-100 px-4 py-2 bg-opacity-100 active:bg-cpurple-3 text-cgray-0 rounded-md items-center'
             >
-              {item.name}
+              <Link href={item.path}>{item.name}</Link>
             </div>
           ))}
         </div>
         <div>
           <Link href='/login'>
-            <Button>Login</Button>
+            <Button size='lg'>Login</Button>
           </Link>
         </div>
       </div>

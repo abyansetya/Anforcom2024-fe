@@ -25,11 +25,31 @@ module.exports = {
         foreground: 'hsl(var(--foreground))',
         primary: {
           DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))'
+          foreground: 'hsl(var(--primary-foreground))',
+          hover: 'hsl(var(--primary-hover))',
+          pressed: 'hsl(var(--primary-pressed))',
+          light: 'hsl(var(--primary-light))',
+          lightForeground: 'hsl(var(--primary-light-foreground))'
         },
-        secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))'
+        secondary1: {
+          DEFAULT: 'hsl(var(--secondary1))',
+          foreground: 'hsl(var(--secondary1-foreground))',
+          hover: 'hsl(var(--secondary1-hover))',
+          pressed: 'hsl(var(--secondary1-pressed))',
+          light: 'hsl(var(--secondary1-light))',
+          lightForeground: 'hsl(var(--secondary1-light-foreground))'
+        },
+        secondary2: {
+          DEFAULT: 'hsl(var(--secondary2))',
+          foreground: 'hsl(var(--secondary2-foreground))',
+          hover: 'hsl(var(--secondary2-hover))',
+          pressed: 'hsl(var(--secondary2-pressed))',
+          light: 'hsl(var(--secondary2-light))',
+          lightForeground: 'hsl(var(--secondary2-light-foreground))'
+        },
+        disabled: {
+          DEFAULT: 'hsl(var(--disabled))',
+          foreground: 'hsl(var(--disabled-foreground))'
         },
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',

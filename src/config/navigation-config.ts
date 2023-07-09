@@ -9,7 +9,7 @@ const navigationConfig = [
   },
   {
     name: 'Competition',
-    path: '/contact'
+    path: '/competition'
   }
 ]
 
