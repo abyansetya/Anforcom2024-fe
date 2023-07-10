@@ -3,14 +3,15 @@ import Header from '@/components/header'
 // import Image from 'next/image'
 // import anforcomIcon from 'public/anforcom-icon.svg'
 // import TitleBox from '@/components/ui/titleBox'
-import TimelinePoint from '@/components/ui/timelinePoint'
-import CountdownPoint from '@/components/ui/countdownPoint'
+// import TimelinePoint from '@/components/ui/timelinePoint'
+// import CountdownPoint from '@/components/ui/countdownPoint'
+import Footer from '@/components/footer'
 
 export default function Test() {
   return (
     <>
       <Header />
-      <main className='flex min-h-screen h-full flex-col items-center px-24 bg-secondary1'>
+      <main className='flex min-h-screen h-full flex-col items-center px-24 bg-white'>
         {/* <section className='flex relative w-full flex-col' id='jumbotron'>
         <div className='w-96 h-96 bg-[#F2E0FF] blur-3xl rounded-full absolute -left-28 top-40 -z-10'></div>
         <div className='w-[500px] h-[500px] bg-[#F5E5FF] blur-3xl rounded-full absolute -right-64 top-40 -z-10'></div>
@@ -74,11 +75,14 @@ export default function Test() {
         <div>
           <TitleBox>Linimasa</TitleBox>
         </div> */}
-        <div className='py-10'>
+        {/* <div className='py-10'>
           <TimelinePoint title='Pendaftaran Batch 1' date='25 Agustus - 26 Agustus' isPassed={false} isHasNext={true} />
         </div>
         <div>
           <CountdownPoint time='05' unit='Hari' />
+        </div> */}
+        <div className='py-10'>
+          <Footer />
         </div>
       </main>
     </>
