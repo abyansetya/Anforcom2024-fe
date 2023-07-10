@@ -9,7 +9,7 @@ import anforcomIcon from 'public/anforcom-icon.svg'
 const Header = () => {
   return (
     <nav className='flex items-center sticky top-0 z-10 w-full h-20 bg-cpurple-5'>
-      <div className='container flex justify-between min-w-full'>
+      <div className='container flex justify-between min-w-full items-center'>
         <Link href='/' className='text-xl font-bold font-serif'>
           <Image src={anforcomIcon} alt='anforcom-icon' width={70} height={33} />
         </Link>
@@ -25,7 +25,7 @@ const Header = () => {
         </div>
         <div>
           <Link href='/login'>
-            <Button size='lg'>Login</Button>
+            <Button>Login</Button>
           </Link>
         </div>
       </div>

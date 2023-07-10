@@ -12,10 +12,10 @@ export default function Home() {
           <div className='w-[58vw] h-[58vw] bg-[#EE426640] blur-[72.5px] rounded-full -left-[300px] -top-[450px] absolute -z-10'></div>
           <div className='w-[58vw] h-[58vw] bg-[#FCD30740] blur-[72.5px] rounded-full -right-[300px] -top-[450px] absolute -z-10'></div>
           <div>
-            <Image className='translate-x-[2.5vw]' src={HeroTitle} alt='hero-title' height={375}></Image>
+            <Image className='translate-x-[1.5vw]' src={HeroTitle} alt='hero-title' height={330}></Image>
           </div>
           <div className='flex flex-col items-center gap-11'>
-            <p className='text-white text-center font-normal text-base opacity-50 font-serif'>
+            <p className='text-white text-center font-normal text-base opacity-50 font-sans'>
               A series of events and competitions organized by the Computer Science Students of Diponegoro <br />{' '}
               University that aims to introduce the Technology Culture to the community.
             </p>

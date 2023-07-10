@@ -1,8 +1,9 @@
 import Header from '@/components/header'
-import { Button } from '@/components/ui/button'
-import Image from 'next/image'
-import anforcomIcon from 'public/anforcom-icon.svg'
+// import { Button } from '@/components/ui/button'
+// import Image from 'next/image'
+// import anforcomIcon from 'public/anforcom-icon.svg'
 import TitleBox from '@/components/ui/titleBox'
+import TimelinePoint from '@/components/ui/timelinePoint'
 
 export default function Test() {
   return (
@@ -15,7 +16,7 @@ export default function Test() {
         <div className='w-[350px] h-[350px] bg-[#F4BF64] blur-3xl rounded-full absolute mx-auto left-12 -top-24 -z-10'></div>
         <div className='w-[350px] h-[350px] bg-[#F4BF64] blur-3xl rounded-full absolute mx-auto right-12 -top-48 -z-10'></div>
       </section> */}
-        <div>
+        {/* <div>
           <Button size='default' variant='default' color='primary'>
             Default
           </Button>
@@ -65,12 +66,15 @@ export default function Test() {
           <Button size='default' variant='subtle' color='secondary2'>
             subtle
           </Button>
-        </div>
-        <div className='py-10'>
+        </div> */}
+        {/* <div className='py-10'>
           <TitleBox>Video Teaser</TitleBox>
         </div>
         <div>
           <TitleBox>Linimasa</TitleBox>
+        </div> */}
+        <div className='py-10'>
+          <TimelinePoint title='Pendaftaran Batch 1' date='25 Agustus - 26 Agustus' isPassed={true} />
         </div>
       </main>
     </>
