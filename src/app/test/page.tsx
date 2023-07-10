@@ -2,8 +2,9 @@ import Header from '@/components/header'
 // import { Button } from '@/components/ui/button'
 // import Image from 'next/image'
 // import anforcomIcon from 'public/anforcom-icon.svg'
-import TitleBox from '@/components/ui/titleBox'
+// import TitleBox from '@/components/ui/titleBox'
 import TimelinePoint from '@/components/ui/timelinePoint'
+import CountdownPoint from '@/components/ui/countdownPoint'
 
 export default function Test() {
   return (
@@ -75,6 +76,9 @@ export default function Test() {
         </div> */}
         <div className='py-10'>
           <TimelinePoint title='Pendaftaran Batch 1' date='25 Agustus - 26 Agustus' isPassed={false} isHasNext={true} />
+        </div>
+        <div>
+          <CountdownPoint time='05' unit='Hari' />
         </div>
       </main>
     </>
