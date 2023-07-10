@@ -21,9 +21,9 @@ const buttonVariants = cva(
         subtle: 'bg-transparent underline-offset-4 hover:underline'
       },
       size: {
-        default: 'h-10 py-2 px-4 rounded-full',
-        sm: 'h-9 px-3 rounded-full',
-        lg: 'h-11 px-8 rounded-full'
+        default: 'text-base h-[50px] font-semibold py-1 px-7 rounded-full',
+        sm: 'text-sm h-[40px] font-semibold py-0.5 px-5 rounded-full',
+        lg: 'text-sm h-[57px] font-semibold py-1.5 px-10 rounded-full'
       }
     },
 
