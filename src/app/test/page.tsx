@@ -2,12 +2,13 @@ import Header from '@/components/header'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import anforcomIcon from 'public/anforcom-icon.svg'
+import TitleBox from '@/components/ui/titleBox'
 
 export default function Test() {
   return (
     <>
       <Header />
-      <main className='flex min-h-screen h-full flex-col items-center px-24 bg-white'>
+      <main className='flex min-h-screen h-full flex-col items-center px-24 bg-slate-600'>
         {/* <section className='flex relative w-full flex-col' id='jumbotron'>
         <div className='w-96 h-96 bg-[#F2E0FF] blur-3xl rounded-full absolute -left-28 top-40 -z-10'></div>
         <div className='w-[500px] h-[500px] bg-[#F5E5FF] blur-3xl rounded-full absolute -right-64 top-40 -z-10'></div>
@@ -64,6 +65,12 @@ export default function Test() {
           <Button size='default' variant='subtle' color='secondary2'>
             subtle
           </Button>
+        </div>
+        <div className='py-10'>
+          <TitleBox>Video Teaser</TitleBox>
+        </div>
+        <div>
+          <TitleBox>Linimasa</TitleBox>
         </div>
       </main>
     </>
