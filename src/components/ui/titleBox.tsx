@@ -9,12 +9,12 @@ type BoxProps = {
 
 export default function TitleBox({ children }: BoxProps) {
   return (
-    <div className='relative'>
+    <div className='relative w-fit'>
       <Image className='absolute -top-[1.95rem] left-8' src={starPinky} alt='' width={47} height={47}></Image>
       <p className='h-[58px] text-secondary1 text-3xl font-serif font-extrabold tracking-[0.617px] bg-white rounded-full px-7 py-[0.594rem]'>
         {children}
       </p>
-      <Image className='absolute -bottom-[2.05rem] right-6' src={spinStarYellow} alt='' width={47} height={47}></Image>
+      <Image className='absolute -bottom-[1.65rem] right-8' src={spinStarYellow} alt='' width={35} height={35}></Image>
     </div>
   )
 }

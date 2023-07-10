@@ -25,7 +25,7 @@ export default function TimelinePoint({ children, title, date, isPassed, isHasNe
           <p className='font-sans text-white text-center'>{date}</p>
         </div>
       </div>
-      {isHasNext && <Image className=' opacity-50 relative -top-7' src={line} alt='' height={11}></Image>}
+      {isHasNext && <Image className='relative -top-7' src={line} alt='' height={11}></Image>}
     </div>
   )
 }
