@@ -9,7 +9,7 @@ export default function Test() {
   return (
     <>
       <Header />
-      <main className='flex min-h-screen h-full flex-col items-center px-24 bg-slate-600'>
+      <main className='flex min-h-screen h-full flex-col items-center px-24 bg-secondary1'>
         {/* <section className='flex relative w-full flex-col' id='jumbotron'>
         <div className='w-96 h-96 bg-[#F2E0FF] blur-3xl rounded-full absolute -left-28 top-40 -z-10'></div>
         <div className='w-[500px] h-[500px] bg-[#F5E5FF] blur-3xl rounded-full absolute -right-64 top-40 -z-10'></div>
@@ -74,7 +74,7 @@ export default function Test() {
           <TitleBox>Linimasa</TitleBox>
         </div> */}
         <div className='py-10'>
-          <TimelinePoint title='Pendaftaran Batch 1' date='25 Agustus - 26 Agustus' isPassed={true} />
+          <TimelinePoint title='Pendaftaran Batch 1' date='25 Agustus - 26 Agustus' isPassed={false} isHasNext={true} />
         </div>
       </main>
     </>
