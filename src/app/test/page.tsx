@@ -6,12 +6,13 @@ import Header from '@/components/header'
 // import TimelinePoint from '@/components/ui/timelinePoint'
 // import CountdownPoint from '@/components/ui/countdownPoint'
 import Footer from '@/components/footer'
+import ContactBox from '@/components/ui/contactBox'
 
 export default function Test() {
   return (
     <>
       <Header />
-      <main className='flex min-h-screen h-full flex-col items-center px-24 bg-white'>
+      <main className='flex min-h-screen h-full flex-col items-center px-24 bg-cgray-5'>
         {/* <section className='flex relative w-full flex-col' id='jumbotron'>
         <div className='w-96 h-96 bg-[#F2E0FF] blur-3xl rounded-full absolute -left-28 top-40 -z-10'></div>
         <div className='w-[500px] h-[500px] bg-[#F5E5FF] blur-3xl rounded-full absolute -right-64 top-40 -z-10'></div>
@@ -83,6 +84,9 @@ export default function Test() {
         </div> */}
         <div className='py-10'>
           <Footer />
+        </div>
+        <div className='py-10'>
+          <ContactBox name='Wanceng' number='081231231231' />
         </div>
       </main>
     </>
