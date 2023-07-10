@@ -5,6 +5,7 @@ import Image from 'next/image'
 import TitleBox from '@/components/ui/titleBox'
 import TimelinePoint from '@/components/ui/timelinePoint'
 import CountdownPoint from '@/components/ui/countdownPoint'
+import Footer from '@/components/footer'
 
 export default function Home() {
   return (
@@ -74,6 +75,7 @@ export default function Home() {
           </div>
         </section>
       </main>
+      <Footer />
     </>
   )
 }
