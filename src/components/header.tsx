@@ -3,26 +3,30 @@
 import { NavigationType, NavigationConfig as navigationConfig } from '@/config/navigation-config'
 import { Button } from './ui/button'
 import Link from 'next/link'
+import Image from 'next/image'
+import anforcomIcon from 'public/anforcom-icon.svg'
 
 const Header = () => {
   return (
-    <nav className='flex items-center sticky top-0 z-10 w-full h-20 backdrop-filter backdrop-blur-lg bg-white bg-opacity-30 border-b'>
-      <div className='container flex justify-between'>
+    <nav className='flex items-center sticky top-0 z-10 w-full h-20 bg-cpurple-5'>
+      <div className='container flex justify-between min-w-full'>
         <Link href='/' className='text-xl font-bold font-serif'>
-          Anforcom
+          <Image src={anforcomIcon} alt='anforcom-icon' width={70} height={33} />
         </Link>
-        <div className='flex gap-4'>
+        <div className='flex gap-8'>
           {navigationConfig.map((item: NavigationType) => (
             <div
               key={item.name}
-              className='flex cursor-pointer font-serif text-sm hover:bg-white px-4 py-2 bg-opacity-60 text-gray-400 hover:text-black rounded-full'
+              className='flex cursor-pointer font-serif text-lg hover:bg-cpurple-4 hover:bg-opacity-100 px-4 py-2 bg-opacity-100 active:bg-cpurple-3 text-cgray-0 rounded-md items-center'
             >
-              {item.name}
+              <Link href={item.path}>{item.name}</Link>
             </div>
           ))}
         </div>
         <div>
-          <Button>Login</Button>
+          <Link href='/login'>
+            <Button size='lg'>Login</Button>
+          </Link>
         </div>
       </div>
     </nav>

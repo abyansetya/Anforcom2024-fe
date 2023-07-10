@@ -4,16 +4,12 @@ const navigationConfig = [
     path: '/'
   },
   {
-    name: 'About',
-    path: '/about'
+    name: 'Event',
+    path: '/event'
   },
   {
-    name: 'Contact',
-    path: '/contact'
-  },
-  {
-    name: 'Login',
-    path: '/login'
+    name: 'Competition',
+    path: '/competition'
   }
 ]
 
