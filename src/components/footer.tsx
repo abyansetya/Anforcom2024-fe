@@ -14,11 +14,21 @@ export default function Footer() {
             aims to introduce the Technology Culture to the community.
           </p>
           <div className='flex text-primary font-serif gap-6'>
-            <Link href='/'>Instagram</Link>
-            <Link href='/'>Twitter</Link>
-            <Link href='/'>Facebook</Link>
-            <Link href='/'>Github</Link>
-            <Link href='/'>YouTube</Link>
+            <Link className='underline-offset-[7px] hover:underline' href='https://www.instagram.com/hmif_undip/'>
+              Instagram
+            </Link>
+            <Link className='underline-offset-[7px] hover:underline' href='https://www.twitter.com/'>
+              Twitter
+            </Link>
+            <Link className='underline-offset-[7px] hover:underline' href='https://www.facebook.com/'>
+              Facebook
+            </Link>
+            <Link className='underline-offset-[7px] hover:underline' href='https://www.github.com/'>
+              Github
+            </Link>
+            <Link className='underline-offset-[7px] hover:underline' href='https://www.youtube.com/'>
+              YouTube
+            </Link>
           </div>
         </div>
         <div className='bg-secondary1 rounded-b-[42px] pt-[26px] pb-[30px] px-10 flex gap-4 items-center'>
