@@ -7,6 +7,7 @@ import Header from '@/components/header'
 // import CountdownPoint from '@/components/ui/countdownPoint'
 import Footer from '@/components/footer'
 import ContactBox from '@/components/ui/contactBox'
+import AccordionItem from '@/components/ui/accordionItem'
 
 export default function Test() {
   return (
@@ -87,6 +88,12 @@ export default function Test() {
         </div>
         <div className='py-10'>
           <ContactBox name='Wanceng' number='081231231231' />
+        </div>
+        <div className='py-10 w-[980px]'>
+          <AccordionItem header='Aku suka kamu, kamu suka siapa?' body='mff ak g ska km, ak dh ska org lain' />
+        </div>
+        <div className='py-10 w-[980px]'>
+          <AccordionItem header='Apakah kita bisa bersatu?' body='mana bisa orang beda agama :)' />
         </div>
       </main>
     </>
