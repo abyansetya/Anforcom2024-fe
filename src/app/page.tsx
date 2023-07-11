@@ -5,6 +5,7 @@ import Image from 'next/image'
 import TitleBox from '@/components/ui/titleBox'
 import TimelinePoint from '@/components/ui/timelinePoint'
 import CountdownPoint from '@/components/ui/countdownPoint'
+import AccordionItem from '@/components/ui/accordionItem'
 import Footer from '@/components/footer'
 
 export default function Home() {
@@ -72,6 +73,19 @@ export default function Home() {
               isPassed={false}
               isHasNext={false}
             />
+          </div>
+        </section>
+
+        <section className='relative flex flex-col items-center gap-[4.5rem] w-full' id='faq'>
+          <TitleBox>Pertanyaan Biasa Ditanyakan</TitleBox>
+          <div className='flex flex-col w-9/12 gap-6'>
+            <AccordionItem header='Apa itu Anforcom?' body='Ya gatau, tanya wanceng sadja' />
+            <AccordionItem header='Bagaimana Pelaksanaanya?' body='Dijalanin bersama asik kali ya' />
+            <AccordionItem
+              header='Gimana Ya Cara Ngungkapin Perasaanku Padanya?'
+              body='Tinggal bilang to ya apa susahnya si'
+            />
+            <AccordionItem header='Semoga sponsornya jadi kenyataan, aamiin' body='Aamiin :)' />
           </div>
         </section>
       </main>

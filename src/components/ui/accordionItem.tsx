@@ -19,7 +19,7 @@ export default function AccordionItem({ header, body }: AccordionItemProps) {
     <div className='w-full'>
       {isOpen ? (
         <h1
-          className='flex flex-row justify-between items-center bg-secondary1 text-white text-xl font-bold font-serif p-6 rounded-t-3xl'
+          className='flex flex-row justify-between items-center bg-cpurple-6 text-white text-xl font-bold font-serif p-6 rounded-t-3xl'
           onClick={toggle}
         >
           {header}
@@ -27,7 +27,7 @@ export default function AccordionItem({ header, body }: AccordionItemProps) {
         </h1>
       ) : (
         <h1
-          className='flex flex-row justify-between items-center bg-secondary1 text-white text-xl font-bold font-serif p-6 rounded-3xl'
+          className='flex flex-row justify-between items-center bg-cpurple-6 text-white text-xl font-bold font-serif p-6 rounded-3xl'
           onClick={toggle}
         >
           {header}
@@ -35,7 +35,7 @@ export default function AccordionItem({ header, body }: AccordionItemProps) {
         </h1>
       )}
       <Collapse isOpened={isOpen}>
-        <p className='bg-secondary1 text-white text-lg font-sans mt-[2px] p-6 rounded-b-3xl'>{body}</p>
+        <p className='bg-cpurple-6 text-white text-lg font-sans mt-[4px] p-6 rounded-b-3xl'>{body}</p>
       </Collapse>
     </div>
   )
