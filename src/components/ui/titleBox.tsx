@@ -21,7 +21,7 @@ export default function TitleBox({ children }: BoxProps) {
       />
 
       <p
-        className='py-[2%] text-secondary1 text-base font-serif font-extrabold tracking-[0.617px] bg-white rounded-full px-4 
+        className='py-[9.5px] text-secondary1 text-base font-serif font-extrabold tracking-[0.617px] bg-white rounded-full px-4 
                     md:text-xl md:px-6
                     lg:text-3xl lg:px-7'
       >

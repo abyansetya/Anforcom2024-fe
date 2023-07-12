@@ -17,7 +17,7 @@ const Header = () => {
           {navigationConfig.map((item: NavigationType) => (
             <div
               key={item.name}
-              className='flex cursor-pointer font-serif text-lg hover:bg-cpurple-4 hover:bg-opacity-100 px-4 py-2 bg-opacity-100 active:bg-cpurple-3 text-cgray-0 rounded-md items-center'
+              className='flex cursor-pointer font-serif text-lg hover:bg-cpurple-3 hover:bg-opacity-50 px-4 py-2 bg-opacity-100 active:bg-cpurple-3 text-cgray-0 rounded-md items-center'
             >
               <Link href={item.path}>{item.name}</Link>
             </div>
