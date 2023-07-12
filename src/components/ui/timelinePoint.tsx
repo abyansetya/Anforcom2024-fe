@@ -17,7 +17,7 @@ export default function TimelinePoint({ children, title, date, isPassed, isHasNe
   const pass = isPassed ? pointGreen : pointRed
   const line = isPassed ? lineGreen : lineRed
   return (
-    <div className='flex flex-row relative'>
+    <div className='flex flex-col relative items-center lg:flex-row lg:items-start'>
       <div className='relative flex flex-col items-center gap-2'>
         <Image className='' src={pass} alt='' width={142} height={142}></Image>
         <div className='flex flex-col items-center'>
@@ -25,7 +25,7 @@ export default function TimelinePoint({ children, title, date, isPassed, isHasNe
           <p className='font-sans text-white text-center'>{date}</p>
         </div>
       </div>
-      {isHasNext && <Image className='relative -top-7' src={line} alt='' height={11}></Image>}
+      {isHasNext && <Image className=' py-[25%] rotate-90 lg:rotate-0 relative' src={line} alt='' height={11}></Image>}
     </div>
   )
 }

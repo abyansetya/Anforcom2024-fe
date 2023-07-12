@@ -36,7 +36,7 @@ export default function Footer() {
           <p className='font-sans text-white'>&#169; 2023 Himpunan Mahasiswa Informatika Universitas Diponegoro</p>
         </div>
       </div>
-      <div className='w-[200%] h-[125%] bg-[#120C3B] blur-[72.5px] rounded-t-[50%] -bottom-[42.5%] absolute -z-10'></div>
+      <div className='w-[200%] h-[125%] bg-[#120C3B] blur-[65px] rounded-t-[50%] -bottom-[42.5%] absolute -z-10'></div>
     </footer>
   )
 }

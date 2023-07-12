@@ -1,20 +1,18 @@
-import { ReactNode } from 'react'
-import pointPurple from 'public/rounded-star-purple.svg'
+import RoundedStarPurple from '../svg/roundedStarPurple'
 
-type CountdownProps = {
-  children?: ReactNode
+interface CountdownPointProps extends React.HTMLAttributes<HTMLDivElement> {
   time: string
   unit: string
 }
 
-export default function CountdownPoint({ children, time, unit }: CountdownProps) {
+export default function CountdownPoint({ time, unit, ...props }: CountdownPointProps) {
   return (
-    <div
-      className='h-[200px] w-[200px] flex flex-col place-content-center'
-      style={{ backgroundImage: `url(${pointPurple.src})` }}
-    >
-      <p className='font-serif text-white text-center text-[4rem]'>{time}</p>
-      <p className='font-sans text-white text-center text-2xl relative -top-4'>{unit}</p>
+    <div className='relative h-[200px] w-[200px] flex flex-col place-content-center' {...props}>
+      <RoundedStarPurple className='w-full h-full absolute left-1/2 -translate-x-1/2 -z-10' />
+      <div className='w-full h-full flex flex-col place-content-center'>
+        <p className='leading-none font-serif text-white text-center text-[4rem]'>{time}</p>
+        <p className='leading-none font-sans text-white text-center text-2xl relative'>{unit}</p>
+      </div>
     </div>
   )
 }

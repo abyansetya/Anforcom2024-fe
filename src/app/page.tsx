@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-// import Header from '@/components/header'
+import Header from '@/components/header'
 import HeroTitle from '@/components/ui/hero-title.svg'
 import Image from 'next/image'
 import TitleBox from '@/components/ui/titleBox'
@@ -11,8 +11,8 @@ import Footer from '@/components/footer'
 export default function Home() {
   return (
     <>
-      {/* <Header/> */}
-      <main className='flex min-h-screen h-full flex-col items-center px-24 pt-14 overflow-hidden gap-32'>
+      <Header />
+      <main className='flex min-h-screen h-full flex-col items-center py-16 overflow-hidden gap-32'>
         <section className='flex relative flex-col items-center w-full my-10 gap-5' id='hero'>
           <div className='w-[65vw] h-[65vw] bg-[#EE426640] blur-[72.5px] rounded-full -left-[22.5%] -top-[125%] absolute -z-10'></div>
           <div className='w-[65vw] h-[65vw] bg-[#FCD30740] blur-[72.5px] rounded-full -right-[22.5%] -top-[125%] absolute -z-10'></div>
@@ -37,7 +37,7 @@ export default function Home() {
 
         <section className='relative flex flex-col items-center gap-12' id='countdown'>
           <TitleBox>Penutupan Pendaftaran</TitleBox>
-          <div className='flex gap-14 mt-6'>
+          <div className='flex flex-col md:flex-row gap-14 mt-6'>
             <CountdownPoint time='05' unit='Hari' />
             <CountdownPoint time='12' unit='Jam' />
             <CountdownPoint time='20' unit='Menit' />
@@ -48,7 +48,7 @@ export default function Home() {
 
         <section className='relative flex flex-col items-center gap-14' id='timeline'>
           <TitleBox>Linimasa</TitleBox>
-          <div className='flex'>
+          <div className='flex flex-col lg:flex-row lg:gap-8'>
             <TimelinePoint
               title='Pendaftaran Batch 1'
               date='25 Agustus - 26 Agustus'
