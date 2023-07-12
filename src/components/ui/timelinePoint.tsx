@@ -25,7 +25,7 @@ export default function TimelinePoint({ children, title, date, isPassed, isHasNe
           <p className='font-sans text-white text-center'>{date}</p>
         </div>
       </div>
-      {isHasNext && <Image className=' py-[25%] rotate-90 lg:rotate-0 relative' src={line} alt='' height={11}></Image>}
+      {isHasNext && <Image className=' py-[64px] rotate-90 lg:rotate-0 relative' src={line} alt='' height={11}></Image>}
     </div>
   )
 }
