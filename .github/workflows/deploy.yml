@@ -1,0 +1,45 @@
+name: Node
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  node-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+      - name: Run install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: install # will run `yarn install` command
+      - name: Run install
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: build # will run `yarn install` command
+      - name: Sync
+        env:
+          dest: "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/home/${{ secrets.SSH_USER }}/anforcom-web.next-innovate.tech"
+        run: |
+          echo "${{secrets.DEPLOY_KEY}}" > ~/deploy_key
+          chmod 600 ~/deploy_key
+          rsync -chav --delete \
+            -e 'ssh -i ~/deploy_key -o StrictHostKeyChecking=no' \
+            --exclude ~/deploy_key \
+            --exclude .git/ \
+            --exclude .github/ \
+            --exclude .env \
+            --exclude node_modules/ \
+            ./ ${{env.dest}}
+      - name: pm2 reload
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          port: 22
+          script: 
+            /home/sainfaizal/.nvm/versions/node/v18.16.1/bin/pm2 reload all
