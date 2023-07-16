@@ -8,7 +8,6 @@ import MobileHeroTitle from '@/assets/images/mobile-hero-home.svg'
 import Image from 'next/image'
 import TitleBox from '@/components/ui/title-box'
 import Highlight from '@/components/highlight'
-import Footer from '@/components/footer'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui'
 import Countdown from '@/components/countdown'
 import { Timeline } from '@/components/timeline'
@@ -157,8 +156,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-
-      <Footer />
     </>
   )
 }

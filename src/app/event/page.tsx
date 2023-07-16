@@ -1,5 +1,3 @@
-import Header from '@/components/header'
-import Footer from '@/components/footer'
 import TitleBox from '@/components/ui/title-box'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
@@ -8,13 +6,11 @@ import Highlight from '@/components/highlight'
 import ContactBox from '@/components/ui/contact-box'
 import speaker1 from 'public/speaker1.png'
 import speaker2 from 'public/speaker2.png'
-import navigationData from '@/constants/navigation-data'
-import AnforcomWhite from '@/assets/images/anforcom-white-logo.svg'
+import Countdown from '@/components/countdown'
 
 export default function Event() {
   return (
     <>
-      <Header logo={AnforcomWhite} links={navigationData} />
       <main className='flex min-h-screen h-full flex-col items-center px-7 py-16 overflow-hidden gap-32'>
         <section className='container flex relative flex-col items-center w-full my-10 gap-5' id='hero'>
           <div className='w-[1500px] h-[1500px] bg-[#EE426640] blur-[72.5px] rounded-full -left-[600px] -top-[900px] absolute -z-10'></div>
@@ -69,12 +65,7 @@ export default function Event() {
 
         <section className='container relative flex flex-col items-center gap-12' id='countdown'>
           <TitleBox>Hitung Mundur</TitleBox>
-          {/* <div className='flex flex-col md:flex-row gap-14 mt-6'>
-            <CountdownPoint time='05' unit='Hari' />
-            <CountdownPoint time='12' unit='Jam' />
-            <CountdownPoint time='20' unit='Menit' />
-            <CountdownPoint time='02' unit='Detik' />
-          </div> */}
+          <Countdown date={'2023-09-25T00:00:00+07:00'} />
           <Button>Daftar Sekarang</Button>
         </section>
 
@@ -87,7 +78,6 @@ export default function Event() {
           <ContactBox name='Wanceng' number='081231231231' />
         </section>
       </main>
-      <Footer />
     </>
   )
 }

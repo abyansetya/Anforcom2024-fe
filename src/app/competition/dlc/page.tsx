@@ -1,7 +1,4 @@
-import Header from '@/components/header'
-import Footer from '@/components/footer'
 import TitleBox from '@/components/ui/title-box'
-import CountdownPoint from '@/components/ui/countdown-point'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import DLCHero from 'public/hero-dlc.svg'
@@ -10,11 +7,11 @@ import ContactBox from '@/components/ui/contact-box'
 import juara1 from 'public/juara1.svg'
 import juara2 from 'public/juara2.svg'
 import juara3 from 'public/juara3.svg'
+import Countdown from '@/components/countdown'
 
 export default function Dlc() {
   return (
     <>
-      <Header />
       <main className='flex min-h-screen h-full flex-col items-center px-7 py-16 overflow-hidden gap-28'>
         <section className='container flex relative flex-col items-center w-full my-10 gap-5' id='hero'>
           <div className='w-[1500px] h-[1500px] bg-[#EE426640] blur-[72.5px] rounded-full -left-[600px] -top-[900px] absolute -z-10'></div>
@@ -40,10 +37,7 @@ export default function Dlc() {
         <section className='container relative flex flex-col items-center gap-12' id='countdown'>
           <TitleBox>Hitung Mundur</TitleBox>
           <div className='flex flex-col md:flex-row gap-14 mt-6'>
-            <CountdownPoint time='05' unit='Hari' />
-            <CountdownPoint time='12' unit='Jam' />
-            <CountdownPoint time='20' unit='Menit' />
-            <CountdownPoint time='02' unit='Detik' />
+            <Countdown date={'2023-09-25T00:00:00+07:00'} />
           </div>
           <Button>Daftar Sekarang</Button>
         </section>
@@ -84,7 +78,6 @@ export default function Dlc() {
           <ContactBox name='Wanceng' number='081231231231' />
         </section>
       </main>
-      <Footer />
     </>
   )
 }

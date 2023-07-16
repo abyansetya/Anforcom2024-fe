@@ -8,6 +8,7 @@ import AnforcomWhite from '@/assets/images/anforcom-white-logo.svg'
 import BottomNavigation from '@/components/bottom-navigation'
 import { Analytics } from '@vercel/analytics/react'
 import FramerProvider from './framer-provider'
+import Footer from '@/components/footer'
 
 export const metadata = {
   title: 'Anforcom 2023',
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <FramerProvider>{children}</FramerProvider>
         <TailwindIndicator />
         <Analytics />
+        <Footer />
 
         <div className='flex md:hidden'>
           <BottomNavigation links={navigationData} />

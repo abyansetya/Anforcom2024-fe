@@ -1,47 +1,8 @@
-// 'use client'
-
-// import { NavigationType, NavigationConfig as navigationConfig } from '@/config/navigation-config'
-// import { Button } from './ui/button'
-// import Link from 'next/link'
-// import Image from 'next/image'
-// import anforcomIcon from 'public/anforcom-icon.svg'
-
-// const Header = () => {
-//   return (
-//     <nav className='flex items-center fixed top-0 z-50 w-full h-20 backdrop-blur-lg bg-cpurple-4 bg-opacity-25'>
-//       <div className='container flex justify-between max-w-6xl items-center'>
-//         <Link href='/' className='text-xl font-bold font-serif'>
-//           <Image src={anforcomIcon} alt='anforcom-icon' width={70} height={33} />
-//         </Link>
-//         <div className='flex gap-8'>
-//           {navigationConfig.map((item: NavigationType) => (
-//             <Link
-//               href={item.path}
-//               key={item.name}
-//               className='flex cursor-pointer rounded-full font-serif  hover:bg-cpurple-3 hover:bg-opacity-50 px-4 py-2 bg-opacity-100 active:bg-cpurple-3 text-cgray-0 items-center'
-//             >
-//               {item.name}
-//             </Link>
-//           ))}
-//         </div>
-//         <div>
-//           <Link href='/login'>
-//             <Button>Login</Button>
-//           </Link>
-//         </div>
-//       </div>
-//     </nav>
-//   )
-// }
-
-// export default Header
-
 'use client'
 
 import { NavigationDataType } from '@/constants/navigation-data'
 import Image from 'next/image'
 import { usePathname, useRouter } from 'next/navigation'
-import { twJoin } from 'tailwind-merge'
 import { Button } from './ui'
 
 type HeaderProps = {
