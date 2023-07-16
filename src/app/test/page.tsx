@@ -6,8 +6,8 @@ import Header from '@/components/header'
 // import TimelinePoint from '@/components/ui/timelinePoint'
 // import CountdownPoint from '@/components/ui/countdownPoint'
 import Footer from '@/components/footer'
-import ContactBox from '@/components/ui/contactBox'
-import AccordionItem from '@/components/ui/accordionItem'
+import ContactBox from '@/components/ui/contact-box'
+import AccordionItem from '@/components/ui/accordion-item'
 
 export default function Test() {
   return (

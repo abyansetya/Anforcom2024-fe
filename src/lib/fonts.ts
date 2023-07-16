@@ -4,6 +4,6 @@ import localFont from 'next/font/local'
 export const fontSerif = FontSerif({ subsets: ['latin'], variable: '--font-serif' })
 
 export const fontSans = localFont({
-  src: './localFonts/InstrumentSans.ttf',
+  src: '../assets/fonts/InstrumentSans.ttf',
   variable: '--font-sans'
 })
