@@ -33,9 +33,19 @@ export default function Dlc() {
               cerdas cermat dan tahap final berupa Rally Games dan Competitive Programming.
             </p>
             <div className='flex gap-6'>
-              <Button color='primary' variant='default'>
-                Daftar DLC
-              </Button>
+              <Link href='https://dashboard.anforcom.com' target='_blank'>
+                <Button color='primary' variant='default'>
+                  Daftar DLC
+                </Button>
+              </Link>
+              <Link
+                href='https://drive.google.com/file/d/1uL5Aw2r__r0rrlhg5vLcmr4Ow4pKfJKB/view?usp=sharing'
+                target='_blank'
+              >
+                <Button color='primary' variant='outline'>
+                  Rulebook
+                </Button>
+              </Link>
             </div>
           </div>
         </section>

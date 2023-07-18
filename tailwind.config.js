@@ -143,6 +143,7 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-animate'),
+    require('tailwind-scrollbar'),
     plugin(function ({ addVariant, e, postcss }) {
       addVariant('firefox', ({ container, separator }) => {
         const isFirefoxRule = postcss.atRule({

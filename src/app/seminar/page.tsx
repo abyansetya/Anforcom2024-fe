@@ -38,9 +38,11 @@ export default function Event() {
               that aims to introduce the Technology Culture to the community.
             </p>
             <div className='flex gap-6'>
-              <Button color='primary' variant='default'>
-                Daftar Seminar
-              </Button>
+              <Link href='' target='_blank'>
+                <Button color='primary' variant='default'>
+                  Daftar Seminar
+                </Button>
+              </Link>
             </div>
           </div>
         </section>

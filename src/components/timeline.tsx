@@ -54,7 +54,7 @@ export function Timeline({ data }: ITimelineProps) {
     <div className='flex relative border-cpurple-4 border-4 rounded-[42px] px-2 py-4 md:px-4 md:py-8'>
       <div className='h-auto w-20 bg-gradient-to-r from-cpurple-5 to-transparent z-10 absolute left-2 md:left-4 top-4 bottom-4' />
       <div className='h-auto w-20 bg-gradient-to-l from-cpurple-5 to-transparent z-10 absolute right-2 md:right-4 top-4 bottom-4' />
-      <div className='flex overflow-x-scroll scroll-smooth px-8'>
+      <div className='flex overflow-x-scroll scrollbar-thin scroll-smooth px-8'>
         {data.map((item, index) => (
           <TimelinePoint key={index} data={item} isLast={index === data.length - 1} />
         ))}

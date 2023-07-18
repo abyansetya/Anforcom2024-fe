@@ -32,16 +32,26 @@ export default function Dlc() {
               pada kenyamanan dan kemudahan pengguna dalam menggunakan sistem/produk tersebut.
             </p>
             <div className='flex gap-6'>
-              <Button color='primary' variant='default'>
-                Daftar DUC
-              </Button>
+              <Link href='https://dashboard.anforcom.com' target='_blank'>
+                <Button color='primary' variant='default'>
+                  Daftar DUC
+                </Button>
+              </Link>
+              <Link
+                href='https://drive.google.com/file/d/1FpjuAaUcMFiIzoiV0KKFu9NL-_jg0aFs/view?usp=sharing'
+                target='_blank'
+              >
+                <Button color='primary' variant='outline'>
+                  Rulebook
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
 
         <section className='container relative flex flex-col items-center gap-12' id='countdown'>
           <TitleBox>Hitung Mundur</TitleBox>
-          <Countdown date={'2023-09-25T00:00:00+07:00'} />
+          <Countdown date={'2023-09-30T00:00:00+07:00'} />
           <Link href='https://dashboard.anforcom.com' target='_blank'>
             <Button>Daftar Sekarang</Button>
           </Link>
