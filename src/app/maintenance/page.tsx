@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import maintenanceIcon from 'public/maintenance-icon.svg'
 
 export default function Maintenance() {
   return (
@@ -14,7 +13,7 @@ export default function Maintenance() {
         <div className='w-[80vw] h-[80vw] bg-secondary2 blur-[363.5px] rounded-full -left-[320%] -top-[420%] absolute -z-10'></div>
 
         <div className='mb-14 z-10'>
-          <Image src={maintenanceIcon} alt='maintenance-icon' width={300} height={300} />
+          <Image src={'/assets/images/maintenance-icon.svg'} alt='maintenance-icon' width={300} height={300} />
         </div>
         <div className='flex flex-col relative w-full gap-3'>
           <p className='text-cgray-0 text-2xl font-bold font-serif text-center'>We&apos;re Under Maintenance</p>
