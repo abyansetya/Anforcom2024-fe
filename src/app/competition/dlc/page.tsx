@@ -93,7 +93,7 @@ export default function Dlc() {
 
         <section className='container relative flex flex-col items-center gap-16' id='contact'>
           <TitleBox>Contact Person</TitleBox>
-          <ContactBox name='Wanceng' number='081231231231' />
+          <ContactBox name='Husain' number='0888 2551 944' />
         </section>
       </main>
     </>
