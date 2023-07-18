@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import highlight1 from 'public/highlight1.png'
-import highlight2 from 'public/highlight2.png'
 
 export default function Highlight() {
   return (
@@ -8,42 +6,42 @@ export default function Highlight() {
       <div className='flex flex-row gap-4 items-center'>
         <Image
           className='aspect-square rounded-xl max-w-[200px] md:max-w-xs object-cover bg-blue-600/30 backdrop-brightness-75'
-          src={highlight1}
+          src={'/assets/images/highlight1.png'}
           alt=''
           width={640}
           height={640}
         />
         <Image
           className='aspect-square rounded-xl max-w-[200px] md:max-w-xs object-cover '
-          src={highlight2}
+          src={'/assets/images/highlight2.png'}
           alt=''
           width={640}
           height={640}
         />
         <Image
           className='aspect-square rounded-xl max-w-[200px] md:max-w-xs object-cover '
-          src={highlight1}
+          src={'/assets/images/highlight1.png'}
           alt=''
           width={640}
           height={640}
         />
         <Image
           className='aspect-square rounded-xl max-w-[200px] md:max-w-xs object-cover '
-          src={highlight2}
+          src={'/assets/images/highlight2.png'}
           alt=''
           width={640}
           height={640}
         />
         <Image
           className='aspect-square rounded-xl max-w-[200px] md:max-w-xs object-cover '
-          src={highlight1}
+          src={'/assets/images/highlight1.png'}
           alt=''
           width={640}
           height={640}
         />
         <Image
           className='aspect-square rounded-xl max-w-[200px] md:max-w-xs object-cover '
-          src={highlight2}
+          src={'/assets/images/highlight2.png'}
           alt=''
           width={640}
           height={640}
@@ -53,35 +51,35 @@ export default function Highlight() {
       <div className='flex flex-row gap-4 items-center'>
         <Image
           className='aspect-square rounded-xl max-w-[200px] md:max-w-xs object-cover '
-          src={highlight1}
+          src={'/assets/images/highlight1.png'}
           alt=''
           width={640}
           height={640}
         />
         <Image
           className='aspect-square rounded-xl max-w-[200px] md:max-w-xs object-cover '
-          src={highlight2}
+          src={'/assets/images/highlight2.png'}
           alt=''
           width={640}
           height={640}
         />
         <Image
           className='aspect-square rounded-xl max-w-[200px] md:max-w-xs object-cover '
-          src={highlight1}
+          src={'/assets/images/highlight1.png'}
           alt=''
           width={640}
           height={640}
         />
         <Image
           className='aspect-square rounded-xl max-w-[200px] md:max-w-xs object-cover '
-          src={highlight2}
+          src={'/assets/images/highlight2.png'}
           alt=''
           width={640}
           height={640}
         />
         <Image
           className='aspect-square rounded-xl max-w-[200px] md:max-w-xs object-cover '
-          src={highlight1}
+          src={'/assets/images/highlight1.png'}
           alt=''
           width={640}
           height={640}

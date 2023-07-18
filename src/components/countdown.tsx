@@ -1,7 +1,7 @@
 'use client'
 
 import { useCountdown } from '@/hooks/useCountdown'
-import RoundedStarPurple from '@/assets/images/rounded-star-purple'
+import Image from 'next/image'
 
 interface CountdownPointProps extends React.HTMLAttributes<HTMLDivElement> {
   time: string | number
@@ -14,7 +14,13 @@ export function CountdownPoint({ time, unit, ...props }: CountdownPointProps) {
       className='relative w-full h-ful min-h-max min-w-max p-10 sm:p-12 md:p-14 flex flex-col place-content-center'
       {...props}
     >
-      <RoundedStarPurple className='w-full h-full absolute left-1/2 -translate-x-1/2 -z-10' />
+      <Image
+        src='/assets/images/rounded-star-purple.svg'
+        width={128}
+        height={128}
+        alt='rounded-star'
+        className='w-full h-full absolute left-1/2 -translate-x-1/2 -z-10'
+      />
       <div className='h-full flex flex-col place-content-center w-[65px] sm:w-[75px] md:w-[85px]'>
         <p
           className='leading-none font-serif text-white text-center text-5xl sm:text-6xl md:text-[4rem] font-bold'

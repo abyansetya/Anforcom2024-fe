@@ -4,7 +4,6 @@ import { fontSans, fontSerif } from '@/lib/fonts'
 import { TailwindIndicator } from '@/components/tailwind-indicator'
 import Header from '@/components/header'
 import navigationData from '@/constants/navigation-data'
-import AnforcomWhite from '@/assets/images/anforcom-white-logo.svg'
 import BottomNavigation from '@/components/bottom-navigation'
 import { Analytics } from '@vercel/analytics/react'
 import FramerProvider from './framer-provider'
@@ -17,9 +16,9 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang='en'>
+    <html lang='en' className='scroll-smooth'>
       <body className={cn(`${fontSans.variable}`, `${fontSerif.variable}`, 'bg-cpurple-5')}>
-        <Header logo={AnforcomWhite} links={navigationData} />
+        <Header logo={'/assets/images/anforcom-white-logo.svg'} links={navigationData} />
         <FramerProvider>{children}</FramerProvider>
         <TailwindIndicator />
         <Analytics />

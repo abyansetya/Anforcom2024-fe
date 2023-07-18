@@ -1,7 +1,5 @@
 import { ReactNode } from 'react'
 import Image from 'next/image'
-import starPinky from 'public/star-pinky.svg'
-import spinStarYellow from 'public/spinstar-yellow.svg'
 
 type BoxProps = {
   children: ReactNode
@@ -14,7 +12,7 @@ export default function TitleBox({ children }: BoxProps) {
         className='absolute w-[27px] -top-[1.1rem] left-4
                         md:w-[37px] md:-top-[1.6rem] md:left-6 
                         lg:w-[47px] lg:-top-[1.95rem] lg:left-8'
-        src={starPinky}
+        src={'/assets/images/star-pinky.svg'}
         alt=''
         width={47}
         height={47}
@@ -32,7 +30,7 @@ export default function TitleBox({ children }: BoxProps) {
         className='absolute w-[18px] -bottom-[0.8rem] right-[1.1rem]
                         md:w-[25px] md:-bottom-[1.2rem] md:right-6
                         lg:w-[35px] lg:-bottom-[1.65rem] lg:right-8'
-        src={spinStarYellow}
+        src={'/assets/images/star-yellow.svg'}
         alt=''
         width={35}
         height={35}

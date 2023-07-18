@@ -1,41 +1,44 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
-import FlowerIcon from '@/assets/images/flower-icons.svg'
-import StarIcon from '@/assets/images/star-icons.svg'
-import DesktopHeroTitle from '@/assets/images/desktop-hero-home.svg'
-import MobileHeroTitle from '@/assets/images/mobile-hero-home.svg'
 import Image from 'next/image'
 import TitleBox from '@/components/ui/title-box'
 import Highlight from '@/components/highlight'
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui'
 import Countdown from '@/components/countdown'
 import { Timeline } from '@/components/timeline'
 import { timelineData } from '@/constants/timeline-data'
 import { cn } from '@/lib/utils'
+import { questionData } from '@/constants/questions-data'
+import FaqAccordion from '@/components/faq-accordion'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <>
       <main className='flex min-h-screen h-full flex-col items-center py-16 overflow-hidden gap-10 sm:gap-20 md:gap-32'>
+        <div className='relative flex'>
+          <div className='w-[1500px] h-[1500px] bg-[#EE426640] blur-[72.5px] rounded-full -left-[600px] -top-[900px] absolute -z-10' />
+          <div className='w-[1500px] h-[1500px] bg-[#FCD30740] blur-[72.5px] rounded-full -right-[600px] -top-[900px] absolute -z-10' />
+        </div>
+
         <section
           className='container max-w-[983px] flex relative flex-col items-center w-full my-10 gap-2 md:gap-5'
           id='hero'
         >
-          <div className='w-[1500px] h-[1500px] bg-[#EE426640] blur-[72.5px] rounded-full -left-[600px] -top-[900px] absolute -z-10'></div>
-          <div className='w-[1500px] h-[1500px] bg-[#FCD30740] blur-[72.5px] rounded-full -right-[600px] -top-[900px] absolute -z-10'></div>
           <div>
             <Image
               className='translate-x-[1.5vw] block md:hidden'
-              src={MobileHeroTitle}
+              src={'/assets/images/mobile-hero-home.svg'}
               alt='hero-title'
               height={330}
+              width={983}
             />
             <Image
               className='translate-x-[1.5vw] hidden md:block'
-              src={DesktopHeroTitle}
+              src={'/assets/images/desktop-hero-home.svg'}
               alt='hero-title'
               height={330}
+              width={983}
             />
           </div>
           <div className='flex flex-col items-center gap-6 md:gap-11'>
@@ -44,12 +47,16 @@ export default function Home() {
               that aims to introduce the Technology Culture to the community.
             </p>
             <div className='flex gap-4 md:gap-6'>
-              <Button color='primary' variant='default'>
-                Daftar
-              </Button>
-              <Button color='primary' variant='outline'>
-                Teaser
-              </Button>
+              <Link href='https://dashboard.anforcom.com' target='_blank'>
+                <Button color='primary' variant='default'>
+                  Daftar
+                </Button>
+              </Link>
+              <Link href='#teaser'>
+                <Button color='primary' variant='outline'>
+                  Teaser
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
@@ -58,9 +65,11 @@ export default function Home() {
           className='container max-w-[983px] relative flex flex-col items-center gap-6 sm:gap-8 md:gap-12'
           id='countdown'
         >
-          <TitleBox>Penutupan Pendaftaran</TitleBox>
-          <Countdown date={'2023-09-25T00:00:00+07:00'} />
-          <Button>Daftar Sekarang</Button>
+          <TitleBox>Menuju Puncak Acara</TitleBox>
+          <Countdown date={'2023-09-30T00:00:00+07:00'} />
+          <Link href='https://dashboard.anforcom.com' target='_blank'>
+            <Button>Daftar Sekarang</Button>
+          </Link>
         </section>
 
         <section className='container max-w-[983px] relative flex flex-col items-center gap-14' id='timeline'>
@@ -81,27 +90,31 @@ export default function Home() {
             <div className='relative bg-[#170F4A] rounded-3xl p-3 md:p-6 w-full aspect-video'>
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[56px] md:max-w-[96px] right-16 md:-top-10 -top-4'
-                src={FlowerIcon}
+                src={'/assets/images/flower-icons.svg'}
                 alt='hero-title'
                 height={128}
+                width={128}
               />
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[64px] md:max-w-[128px] -left-10 md:-top-10 -top-4'
-                src={StarIcon}
+                src={'/assets/images/star-icons.svg'}
                 alt='hero-title'
                 height={128}
+                width={128}
               />
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[50px] md:max-w-[84px] left-10 md:left-16 -bottom-4 md:-bottom-10'
-                src={FlowerIcon}
+                src={'/assets/images/flower-icons.svg'}
                 alt='hero-title'
                 height={128}
+                width={128}
               />
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[64px] md:max-w-[128px] -right-4 md:-right-9 -bottom-10'
-                src={StarIcon}
+                src={'/assets/images/star-icons.svg'}
                 alt='hero-title'
                 height={128}
+                width={128}
               />
 
               <iframe
@@ -109,8 +122,8 @@ export default function Home() {
                 className='rounded-lg'
                 width='100%'
                 height='100%'
-                src='https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=0&origin=http://example.com&controls=0&rel=1'
-                title='YouTube video player'
+                src='https://www.youtube.com/embed/7ReUxB037Rk'
+                title='Anforcom Teaser'
                 frameBorder='0'
                 allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
                 allowFullScreen
@@ -139,20 +152,7 @@ export default function Home() {
         >
           <TitleBox>Pertanyaan Biasa Ditanyakan</TitleBox>
           <div className='flex flex-col w-full gap-6'>
-            <Accordion type='single' collapsible className='flex flex-col space-y-2 md:space-y-4'>
-              <AccordionItem value='item-1'>
-                <AccordionTrigger>Apa itu Anforcom</AccordionTrigger>
-                <AccordionContent>Ya gatau, tanya wanceng sadja</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value='item-2'>
-                <AccordionTrigger>Bagaimana Pelaksanaanya?</AccordionTrigger>
-                <AccordionContent>Dijalanin bersama asik kali ya</AccordionContent>
-              </AccordionItem>
-              <AccordionItem value='item-3'>
-                <AccordionTrigger>Semoga sponsornya jadi kenyataan, aamiin</AccordionTrigger>
-                <AccordionContent>Aamiin</AccordionContent>
-              </AccordionItem>
-            </Accordion>
+            <FaqAccordion data={questionData} />
           </div>
         </section>
       </main>

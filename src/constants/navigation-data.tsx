@@ -12,12 +12,12 @@ const navigationData = [
     icon: <IconArtboard />,
     subMenu: [
       {
-        label: 'Kompetisi 1',
-        href: '/competition/1'
+        label: 'UI-UX Competition',
+        href: '/competition/duc'
       },
       {
-        label: 'Kompetisi 2',
-        href: '/competition/2'
+        label: 'Logic Competition',
+        href: '/competition/dlc'
       }
     ]
   },
