@@ -65,11 +65,6 @@ export default function Dlc() {
               <div className='flex flex-col items-center'>
                 <h3 className='text-white text-2xl font-bold font-serif tracking-[0.48px]'>Juara 1</h3>
                 <p className='text-white text-2xl font-sans tracking-[0.48px]'>Rp. 3.000.000</p>
-                <p className='text-[#FAC000] text-2xl font-sans tracking-[0.48px]'>
-                  {' '}
-                  <span className='text-white'>+</span> Golden Pass
-                </p>
-                <p className='text-[#FAC000] text-2xl font-sans tracking-[0.48px]'>Informatika Undip</p>
               </div>
             </div>
             <div className='order-first flex flex-col items-center gap-16'>

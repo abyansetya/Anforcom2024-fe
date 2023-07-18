@@ -52,43 +52,17 @@ export default function Event() {
             <Image src={'/assets/images/speaker1.png'} alt='' height={500} width={500} />
 
             <div className='flex flex-col gap-2 md:gap-6 w-full'>
-              {/* <h3 className='text-white font-serif text-xl md:text-[2rem] tracking-[0.64px]'>Seminar 1</h3>
+              <h3 className='text-white font-serif text-xl md:text-[2rem] tracking-[0.64px]'>Seminar 1</h3>
               <h1 className='text-white font-serif text-3xl md:text-5xl font-bold tracking-[0.96px]'>
-                Cara Meluluhkan Hati Wanita
+                Artificial Intelligence: Pros, Cons, and Where It All Started
               </h1>
               <div>
                 <p className='text-white font-sans text-base md:text-2xl font-bold tracking-[0.48px]'>
-                  Mochammad Dzahwan “Wanceng” Fadhloly
+                  Cahyo Adhi Hartanto
                 </p>
                 <p className='text-white font-sans text-base md:text-2xl tracking-[0.48px]'>
-                  Women Heart Engineer @ Wanceng Inc.
+                  Artificial Intelligence Engineer / Data Scientist PT Bank Syariah Indonesia Tbk.
                 </p>
-              </div> */}
-
-              <div className='flex font-sans text-2xl text-white text-center justify-center font-bold'>
-                To Be Announced
-              </div>
-            </div>
-          </div>
-
-          <div className='flex flex-col md:flex-row-reverse items-center gap-10 md:gap-16 mt-6 md:mt-0'>
-            <Image src={'/assets/images/speaker1.png'} alt='' height={500} width={500} />
-            <div className='flex flex-col gap-2 md:gap-6 w-full'>
-              {/* <h3 className='text-white font-serif text-xl md:text-[2rem] tracking-[0.64px]'>Seminar 1</h3>
-              <h1 className='text-white font-serif text-3xl md:text-5xl font-bold tracking-[0.96px]'>
-                Cara Meluluhkan Hati Wanita
-              </h1>
-              <div>
-                <p className='text-white font-sans text-base md:text-2xl font-bold tracking-[0.48px]'>
-                  Mochammad Dzahwan “Wanceng” Fadhloly
-                </p>
-                <p className='text-white font-sans text-base md:text-2xl tracking-[0.48px]'>
-                  Women Heart Engineer @ Wanceng Inc.
-                </p>
-              </div> */}
-
-              <div className='flex font-sans text-2xl text-white text-center justify-center font-bold'>
-                To Be Announced
               </div>
             </div>
           </div>
@@ -108,7 +82,7 @@ export default function Event() {
 
         <section className='relative flex flex-col items-center gap-16' id='contact'>
           <TitleBox>Contact Person</TitleBox>
-          <ContactBox name='Wanceng' number='081231231231' />
+          <ContactBox name='Reihan' number='0858 6518 6206' />
         </section>
       </main>
     </>
