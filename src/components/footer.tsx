@@ -13,19 +13,19 @@ export default function Footer() {
               that aims to introduce the Technology Culture to the community.
             </p>
             <div className='flex text-primary font-serif gap-6 flex-col md:flex-row text-sm md:text-base'>
-              <Link className='underline-offset-[7px] hover:underline' href='https://www.instagram.com/hmif_undip/'>
+              <Link className='underline-offset-[7px] hover:underline' href='https://www.instagram.com/anforcom/'>
                 Instagram
               </Link>
-              <Link className='underline-offset-[7px] hover:underline' href='https://www.twitter.com/'>
+              <Link className='underline-offset-[7px] hover:underline' href='https://twitter.com/Anforcom'>
                 Twitter
               </Link>
-              <Link className='underline-offset-[7px] hover:underline' href='https://www.facebook.com/'>
+              {/* <Link className='underline-offset-[7px] hover:underline' href='https://www.facebook.com/'>
                 Facebook
-              </Link>
-              <Link className='underline-offset-[7px] hover:underline' href='https://www.github.com/'>
+              </Link> */}
+              {/* <Link className='underline-offset-[7px] hover:underline' href='https://www.github.com/'>
                 Github
-              </Link>
-              <Link className='underline-offset-[7px] hover:underline' href='https://www.youtube.com/'>
+              </Link> */}
+              <Link className='underline-offset-[7px] hover:underline' href='https://www.youtube.com/@anforcom3831'>
                 YouTube
               </Link>
             </div>
