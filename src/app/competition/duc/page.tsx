@@ -37,10 +37,7 @@ export default function Dlc() {
                   Daftar DUC
                 </Button>
               </Link>
-              <Link
-                href='https://drive.google.com/file/d/1FpjuAaUcMFiIzoiV0KKFu9NL-_jg0aFs/view?usp=sharing'
-                target='_blank'
-              >
+              <Link href='https://bit.ly/RulebookDUC2023' target='_blank'>
                 <Button color='primary' variant='outline'>
                   Rulebook
                 </Button>
