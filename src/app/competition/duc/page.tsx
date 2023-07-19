@@ -6,7 +6,7 @@ import ContactBox from '@/components/ui/contact-box'
 import Countdown from '@/components/countdown'
 import Link from 'next/link'
 
-export default function Dlc() {
+export default function Duc() {
   return (
     <>
       <main className='flex min-h-screen h-full flex-col items-center px-7 py-16 overflow-hidden gap-28'>
@@ -27,9 +27,9 @@ export default function Dlc() {
           </div>
           <div className='flex flex-col items-center gap-11'>
             <p className='text-white text-center font-normal text-base opacity-50 font-sans w-full md:w-2/3'>
-              UI/UX adalah salah satu cabang lomba dari serangkaian kegiatan ANFORCOM 2022 yang dapat diikuti oleh
-              mahasiswa se-Indonesia. Kegiatan ini berupa kompetisi desain antarmuka sistem/produk yang berorientasi
-              pada kenyamanan dan kemudahan pengguna dalam menggunakan sistem/produk tersebut.
+              UI/UX adalah salah satu cabang lomba dari serangkaian kegiatan ANFORCOM 2023 yang dapat diikuti oleh SLTA
+              sederajat dan mahasiswa se-Indonesia. Kegiatan ini berupa kompetisi desain antarmuka sistem/produk yang
+              berorientasi pada kenyamanan dan kemudahan pengguna dalam menggunakan sistem/produk tersebut.
             </p>
             <div className='flex gap-6'>
               <Link href='https://dashboard.anforcom.com' target='_blank'>
@@ -37,10 +37,7 @@ export default function Dlc() {
                   Daftar DUC
                 </Button>
               </Link>
-              <Link
-                href='https://drive.google.com/file/d/1FpjuAaUcMFiIzoiV0KKFu9NL-_jg0aFs/view?usp=sharing'
-                target='_blank'
-              >
+              <Link href='https://bit.ly/RulebookDUC2023' target='_blank'>
                 <Button color='primary' variant='outline'>
                   Rulebook
                 </Button>

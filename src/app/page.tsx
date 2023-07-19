@@ -135,7 +135,7 @@ export default function Home() {
               <div className='flex' key={index}>
                 <span
                   className={cn(
-                    'font-extrabold w-full font-sans text-[9.95vw] leading-5 md:leading-8 lg:leading-[64px] text-justify after:inline-block after:w-full after:content-[" "] text-[#676190]',
+                    'font-extrabold w-full font-sans text-[9.5vw] leading-5 md:leading-8 lg:leading-[64px] text-justify after:inline-block after:w-full after:content-[" "] text-[#676190]',
                     index % 2 ? 'opacity-30' : 'opacity-100'
                   )}
                 >

@@ -27,7 +27,7 @@ export default function Dlc() {
           </div>
           <div className='flex flex-col items-center gap-11'>
             <p className='text-white text-center font-normal text-base opacity-50 font-sans w-full md:w-2/3'>
-              (DLC) adalah salah satu cabang lomba dari serangkaian kegiatan ANFORCOM 2022 yang dapat diikuti oleh
+              (DLC) adalah salah satu cabang lomba dari serangkaian kegiatan ANFORCOM 2023 yang dapat diikuti oleh
               mahasiswa se-Indonesia. Kegiatan ini bertujuan untuk mengasah kemampuan berpikir logis dan kemampuan
               problem solving secara kompetitif. Kompetisi ini terdiri dari 2 tahap, yaitu tahap penyisihan berupa
               cerdas cermat dan tahap final berupa Rally Games dan Competitive Programming.
