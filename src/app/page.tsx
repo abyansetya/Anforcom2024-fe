@@ -72,7 +72,7 @@ export default function Home() {
               <Button>Daftar Sekarang</Button>
             </Link>
             <Link href='#regtutorial' className='text-primary font-sans hover:text-cyellow-7 underline'>
-              Cara Daftar
+              Tutorial Pendaftaran
             </Link>
           </div>
         </section>
@@ -153,7 +153,7 @@ export default function Home() {
 
         <section className='relative w-full' id='regtutorial'>
           <div className='container max-w-[983px] w-full flex flex-col items-center gap-10 md:gap-20 '>
-            <TitleBox>Cara Daftar</TitleBox>
+            <TitleBox>Tutorial Pendaftaran</TitleBox>
             <div className='relative bg-[#170F4A] rounded-3xl p-3 md:p-6 w-full aspect-video'>
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[56px] md:max-w-[96px] right-16 md:-top-10 -top-4'
