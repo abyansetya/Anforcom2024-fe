@@ -67,9 +67,14 @@ export default function Home() {
         >
           <TitleBox>Menuju Puncak Acara</TitleBox>
           <Countdown date={'2023-09-30T00:00:00+07:00'} />
-          <Link href='https://dashboard.anforcom.com' target='_blank'>
-            <Button>Daftar Sekarang</Button>
-          </Link>
+          <div className='flex flex-col gap-4  sm:gap-5 md:gap-6 items-center'>
+            <Link href='https://dashboard.anforcom.com' target='_blank'>
+              <Button>Daftar Sekarang</Button>
+            </Link>
+            <Link href='#regtutorial' className='text-primary font-sans hover:text-cyellow-7 underline'>
+              Cara Daftar
+            </Link>
+          </div>
         </section>
 
         <section className='container max-w-[983px] relative flex flex-col items-center gap-14' id='timeline'>
@@ -143,6 +148,54 @@ export default function Home() {
                 </span>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className='relative w-full' id='regtutorial'>
+          <div className='container max-w-[983px] w-full flex flex-col items-center gap-10 md:gap-20 '>
+            <TitleBox>Cara Daftar</TitleBox>
+            <div className='relative bg-[#170F4A] rounded-3xl p-3 md:p-6 w-full aspect-video'>
+              <Image
+                className='translate-x-[1.5vw] absolute w-full max-w-[56px] md:max-w-[96px] right-16 md:-top-10 -top-4'
+                src={'/assets/images/flower-icons.svg'}
+                alt='hero-title'
+                height={128}
+                width={128}
+              />
+              <Image
+                className='translate-x-[1.5vw] absolute w-full max-w-[64px] md:max-w-[128px] -left-10 md:-top-10 -top-4'
+                src={'/assets/images/star-icons.svg'}
+                alt='hero-title'
+                height={128}
+                width={128}
+              />
+              <Image
+                className='translate-x-[1.5vw] absolute w-full max-w-[50px] md:max-w-[84px] left-10 md:left-16 -bottom-4 md:-bottom-10'
+                src={'/assets/images/flower-icons.svg'}
+                alt='hero-title'
+                height={128}
+                width={128}
+              />
+              <Image
+                className='translate-x-[1.5vw] absolute w-full max-w-[64px] md:max-w-[128px] -right-4 md:-right-9 -bottom-10'
+                src={'/assets/images/star-icons.svg'}
+                alt='hero-title'
+                height={128}
+                width={128}
+              />
+
+              <iframe
+                id='ytplayer'
+                className='rounded-lg'
+                width='100%'
+                height='100%'
+                src='https://www.youtube.com/embed/Kp51sPjC7js'
+                title='Tutorial Registrasi Anforcom 2023'
+                frameBorder='0'
+                allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                allowFullScreen
+              />
+            </div>
           </div>
         </section>
 
