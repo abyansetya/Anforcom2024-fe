@@ -33,7 +33,7 @@ export default function Footer() {
           <div className='bg-secondary1 rounded-b-[40px] pt-[26px] pb-[30px] px-10 flex gap-4 items-center'>
             <Image src={'/assets/images/angkasa-juang.svg'} alt='' height={39} width={24} />
             <div className='flex flex-col md:flex-row gap-1'>
-              <p className='font-sans text-white text-xs md:text-sm'>&#169; 2023</p>
+              <p className='font-sans text-white text-xs md:text-sm'>&#169; 2024</p>
               <p className='font-sans text-white text-xs md:text-sm'>
                 Himpunan Mahasiswa Informatika Universitas Diponegoro
               </p>
