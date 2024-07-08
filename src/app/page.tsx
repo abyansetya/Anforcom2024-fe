@@ -12,6 +12,7 @@ import { questionData } from '@/constants/questions-data'
 import FaqAccordion from '@/components/faq-accordion'
 import Link from 'next/link'
 import Modal from '@/components/Modal'
+import Sponsor from '@/components/sponsor'
 
 export default function Home() {
   const [isModalVisible, setIsModalVisible] = useState(false)
@@ -54,7 +55,7 @@ export default function Home() {
             />
           </div>
           <div className='flex flex-col items-center gap-6 md:gap-11'>
-            <p className='text-cwhite-9 text-center font-normal text-xs sm:text-sm md:text-base opacity-50 font-sans w-full md:w-2/3'>
+            <p className='text-cwhite-9 text-center font-normal sm:mt-0 mt-[50px] text-xs sm:text-sm md:text-base opacity-50 font-sans w-full md:w-2/3'>
               A series of events and competitions organized by the Computer Science Students of Diponegoro University
               that aims to introduce the Technology Culture to the community.
             </p>
@@ -80,10 +81,11 @@ export default function Home() {
           />
         </div>
 
-        <section
-          className='container max-w-[983px] p-0 md:pt-0 lg:pt-[120px] relative flex flex-col items-center'
-          id='countdown'
-        >
+        <section className='h-[150px] '>
+          <Sponsor />
+        </section>
+
+        <section className='container max-w-[983px] p-0  relative flex flex-col items-center' id='countdown'>
           <TitleBox>Menuju Puncak Acara</TitleBox>
           <Countdown date={'2024-09-21T00:00:00+07:00'} />
           <div className='flex flex-col gap-4  sm:gap-5 md:gap-6 items-center'>
@@ -104,38 +106,38 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='relative w-[750%]' id='highlight'>
+        <section className='h-[400px]' id='highlight'>
           <Highlight />
         </section>
 
         <section className='relative w-full' id='teaser'>
           <div className='container max-w-[983px] w-full flex flex-col items-center gap-10 md:gap-20 '>
             <TitleBox>Video Teaser</TitleBox>
-            <div className='relative bg-[#170F4A] rounded-3xl p-3 md:p-6 w-full aspect-video'>
+            <div className='relative bg-cgreen-4 rounded-3xl p-3 md:p-6 w-full aspect-video'>
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[56px] md:max-w-[96px] right-16 md:-top-10 -top-4'
-                src={'/assets/images/flower-icons.svg'}
+                src={'/assets/images/teratai.svg'}
                 alt='hero-title'
-                height={128}
-                width={128}
+                height={80}
+                width={80}
               />
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[64px] md:max-w-[128px] -left-10 md:-top-10 -top-4'
-                src={'/assets/images/star-icons.svg'}
+                src={'/assets/images/star.svg'}
                 alt='hero-title'
                 height={128}
                 width={128}
               />
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[50px] md:max-w-[84px] left-10 md:left-16 -bottom-4 md:-bottom-10'
-                src={'/assets/images/flower-icons.svg'}
+                src={'/assets/images/teratai.svg'}
                 alt='hero-title'
                 height={128}
                 width={128}
               />
               <Image
-                className='translate-x-[1.5vw] absolute w-full max-w-[64px] md:max-w-[128px] -right-4 md:-right-9 -bottom-10'
-                src={'/assets/images/star-icons.svg'}
+                className='translate-x-[3vw] absolute w-full max-w-[64px] md:max-w-[128px] -right-4 md:-right-9 -bottom-10'
+                src={'/assets/images/star.svg'}
                 alt='hero-title'
                 height={128}
                 width={128}
@@ -159,7 +161,7 @@ export default function Home() {
               <div className='flex' key={index}>
                 <span
                   className={cn(
-                    'font-extrabold w-full font-sans text-[9.5vw] leading-5 md:leading-8 lg:leading-[64px] text-justify after:inline-block after:w-full after:content-[" "] text-[#676190]',
+                    'font-extrabold w-full font-sans text-[9.5vw] leading-5 md:leading-8 lg:leading-[64px] text-justify after:inline-block after:w-full after:content-[" "] text-cgreen-1',
                     index % 2 ? 'opacity-30' : 'opacity-100'
                   )}
                 >
@@ -173,31 +175,31 @@ export default function Home() {
         <section className='relative w-full' id='regtutorial'>
           <div className='container max-w-[983px] w-full flex flex-col items-center gap-10 md:gap-20 '>
             <TitleBox>Tutorial Pendaftaran</TitleBox>
-            <div className='relative bg-[#170F4A] rounded-3xl p-3 md:p-6 w-full aspect-video'>
+            <div className='relative bg-cgreen-4 rounded-3xl p-3 md:p-6 w-full aspect-video'>
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[56px] md:max-w-[96px] right-16 md:-top-10 -top-4'
-                src={'/assets/images/flower-icons.svg'}
+                src={'/assets/images/teratai.svg'}
                 alt='hero-title'
                 height={128}
                 width={128}
               />
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[64px] md:max-w-[128px] -left-10 md:-top-10 -top-4'
-                src={'/assets/images/star-icons.svg'}
+                src={'/assets/images/star.svg'}
                 alt='hero-title'
                 height={128}
                 width={128}
               />
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[50px] md:max-w-[84px] left-10 md:left-16 -bottom-4 md:-bottom-10'
-                src={'/assets/images/flower-icons.svg'}
+                src={'/assets/images/teratai.svg'}
                 alt='hero-title'
                 height={128}
                 width={128}
               />
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[64px] md:max-w-[128px] -right-4 md:-right-9 -bottom-10'
-                src={'/assets/images/star-icons.svg'}
+                src={'/assets/images/star.svg'}
                 alt='hero-title'
                 height={128}
                 width={128}
@@ -216,10 +218,24 @@ export default function Home() {
               />
             </div>
           </div>
+          <div className='flex flex-col gap-2 absolute right-0 left-0 -z-10 -bottom-20 md:-bottom-50 lg:-bottom-36'>
+            {[1, 2, 3, 4].map((_item, index) => (
+              <div className='flex' key={index}>
+                <span
+                  className={cn(
+                    'font-extrabold w-full font-sans text-[7.5vw] leading-5 md:leading-8 lg:leading-[64px] text-justify after:inline-block after:w-full after:content-[" "] text-cgreen-1',
+                    index % 2 ? 'opacity-30' : 'opacity-100'
+                  )}
+                >
+                  TUTORIAL PENDAFTARAN
+                </span>
+              </div>
+            ))}
+          </div>
         </section>
 
         <section
-          className='container max-w-[983px] relative flex flex-col items-center gap-10 md:gap-20 w-full mt-16 md:mt-0'
+          className='container max-w-[983px] mb-[80px] relative flex flex-col items-center gap-10 md:gap-20 w-full mt-16 md:mt-[30px]'
           id='faq'
         >
           <TitleBox>Pertanyaan Biasa Ditanyakan</TitleBox>
