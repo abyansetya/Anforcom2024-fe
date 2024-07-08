@@ -15,20 +15,20 @@ export function CountdownPoint({ time, unit, ...props }: CountdownPointProps) {
       {...props}
     >
       <Image
-        src='/assets/images/rounded-star-purple.svg'
-        width={128}
-        height={128}
+        src='/assets/images/clock.svg'
+        width={150}
+        height={150}
         alt='rounded-star'
-        className='w-full h-full absolute left-1/2 -translate-x-1/2 -z-10'
+        className='w-full h-full absolute left-1/2 -translate-x-1/2 -z-10 '
       />
-      <div className='h-full flex flex-col place-content-center w-[65px] sm:w-[75px] md:w-[85px]'>
+      <div className='h-full flex flex-col place-content-center w-[65px] translate-x-[30px] sm:w-[75px] md:w-[85px] md:translate-x-[50px]'>
         <p
-          className='leading-none font-serif text-white text-center text-5xl sm:text-6xl md:text-[4rem] font-bold'
+          className='leading-none font-serif text-white text-center text-2xl sm:text-6xl md:text-[3rem] font-bold'
           suppressHydrationWarning
         >
           {time}
         </p>
-        <p className='leading-none font-sans text-white text-center text-md sm:text-xl md:text-2xl relative'>{unit}</p>
+        <p className='leading-none font-sans text-white text-center text-md sm:text-xl md:text-xl relative'>{unit}</p>
       </div>
     </div>
   )

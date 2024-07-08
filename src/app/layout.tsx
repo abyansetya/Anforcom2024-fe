@@ -9,6 +9,7 @@ import { Analytics } from '@vercel/analytics/react'
 import FramerProvider from './framer-provider'
 import Footer from '@/components/footer'
 import { Metadata } from 'next'
+import Whatsapp from '@/components/whatsapp'
 
 export const metadata: Metadata = {
   title: 'Anforcom 2023',
@@ -20,8 +21,8 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en' className='scroll-smooth'>
-      <body className={cn(`${fontSans.variable}`, `${fontSerif.variable}`, 'bg-cpurple-5')}>
-        <Header logo={'/assets/images/anforcom-white-logo.svg'} links={navigationData} />
+      <body className={cn(`${fontSans.variable}`, `${fontSerif.variable}`, 'bg-cwhite-5')}>
+        <Header logo={'/assets/images/logo.svg'} links={navigationData} />
         <FramerProvider>{children}</FramerProvider>
         <TailwindIndicator />
         <Analytics />
@@ -29,6 +30,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <div className='flex md:hidden'>
           <BottomNavigation links={navigationData} />
+        </div>
+
+        <div>
+          <Whatsapp />
         </div>
       </body>
     </html>

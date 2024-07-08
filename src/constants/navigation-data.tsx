@@ -22,8 +22,8 @@ const navigationData = [
     ]
   },
   {
-    label: 'Seminar',
-    href: '/seminar',
+    label: 'Bootcamp',
+    href: '/bootcamp',
     icon: <IconUsers />
   }
 ]

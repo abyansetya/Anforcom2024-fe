@@ -1,10 +1,12 @@
 #!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
+. "C:/LOCAL D/KULIAH/ANFORCOM/anforcomweb/anforcom-web/.husky/_/husky.sh"
 
+
+# Rest of your pre-commit hook script goes here
 echo '🏗️👷 Styling your project before committing👷‍♂️🏗️'
 echo 'please be patient, this may take a while...'
 
-# Check ESLint Standards
+# Example linting command
 yarn lint ||
 (
     echo '🔨❌ Yoo, you have a problem in your code. Check linter 🔨❌

@@ -1,5 +1,5 @@
 'use client'
-
+import { useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import TitleBox from '@/components/ui/title-box'
@@ -11,10 +11,27 @@ import { cn } from '@/lib/utils'
 import { questionData } from '@/constants/questions-data'
 import FaqAccordion from '@/components/faq-accordion'
 import Link from 'next/link'
+import Modal from '@/components/Modal'
 
 export default function Home() {
+  const [isModalVisible, setIsModalVisible] = useState(false)
+
+  useEffect(() => {
+    const lastVisit = localStorage.getItem('lastVisit')
+    const today = new Date().toDateString()
+
+    if (lastVisit !== today) {
+      setIsModalVisible(true)
+      localStorage.setItem('lastVisit', today)
+    }
+  }, [])
+
+  const handleCloseModal = () => {
+    setIsModalVisible(false)
+  }
   return (
     <>
+      <Modal isVisible={isModalVisible} onClose={handleCloseModal} />
       <main className='flex min-h-screen h-full flex-col items-center py-16 overflow-hidden gap-10 sm:gap-20 md:gap-32'>
         <div className='relative flex'>
           <div className='w-[1500px] h-[1500px] bg-[#EE426640] blur-[72.5px] rounded-full -left-[600px] -top-[900px] absolute -z-10' />
@@ -71,7 +88,7 @@ export default function Home() {
             <Link href='https://dashboard.anforcom.com' target='_blank'>
               <Button>Daftar Sekarang</Button>
             </Link>
-            <Link href='#regtutorial' className='text-primary font-sans hover:text-cyellow-7 underline'>
+            <Link href='#regtutorial' className='text-primary font-sans hover:text-cwhite-7 underline'>
               Tutorial Pendaftaran
             </Link>
           </div>

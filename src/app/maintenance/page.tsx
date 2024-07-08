@@ -16,8 +16,8 @@ export default function Maintenance() {
           <Image src={'/assets/images/maintenance-icon.svg'} alt='maintenance-icon' width={300} height={300} />
         </div>
         <div className='flex flex-col relative w-full gap-3'>
-          <p className='text-cgray-0 text-2xl font-bold font-serif text-center'>We&apos;re Under Maintenance</p>
-          <p className='text-cgray-0 text-2xl font-light font-serif text-center'>
+          <p className='text-cblue-0 text-2xl font-bold font-serif text-center'>We&apos;re Under Maintenance</p>
+          <p className='text-cblue-0 text-2xl font-light font-serif text-center'>
             The page you&apos;re looking for is currently <br /> under maintenance and will back soon
           </p>
         </div>

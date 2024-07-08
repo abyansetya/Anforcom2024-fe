@@ -9,25 +9,21 @@ import Link from 'next/link'
 export default function Duc() {
   return (
     <>
-      <main className='flex min-h-screen h-full flex-col items-center px-7 py-16 overflow-hidden gap-28'>
-        <div className='relative flex'>
-          <div className='w-[1500px] h-[1500px] bg-[#EE426640] blur-[72.5px] rounded-full -left-[600px] -top-[900px] absolute -z-10' />
-          <div className='w-[1500px] h-[1500px] bg-[#FCD30740] blur-[72.5px] rounded-full -right-[600px] -top-[900px] absolute -z-10' />
-        </div>
-
-        <section className='container flex relative flex-col items-center w-full my-10 gap-5' id='hero'>
-          <div>
+      <main className='flex min-h-screen h-full flex-col items-center px-7 lg:pt-[100px] md:pt-[200px] pt-[100px]  overflow-hidden gap-28'>
+        <section className=' w-full' id='hero'>
+          <div className='absolute w-full left-0 right-0 '>
             <Image
-              className='translate-x-[1.5vw]'
-              src={'/assets/images/hero-duc.svg'}
+              className='w-full'
+              src={'/assets/images/duc.svg'}
               alt='hero-title'
+              layout='responsive'
               height={330}
-              width={983}
+              width={1700}
             />
           </div>
-          <div className='flex flex-col items-center gap-11'>
-            <p className='text-white text-center font-normal text-base opacity-50 font-sans w-full md:w-2/3'>
-              UI/UX adalah salah satu cabang lomba dari serangkaian kegiatan ANFORCOM 2023 yang dapat diikuti oleh SLTA
+          <div className='relative flex flex-col items-center gap-11 pt-[300px]'>
+            <p className='text-cwhite-9 text-center font-normal text-base opacity-50 font-sans w-full md:w-2/3'>
+              UI/UX adalah salah satu cabang lomba dari serangkaian kegiatan ANFORCOM 2024 yang dapat diikuti oleh SLTA
               sederajat dan mahasiswa se-Indonesia. Kegiatan ini berupa kompetisi desain antarmuka sistem/produk yang
               berorientasi pada kenyamanan dan kemudahan pengguna dalam menggunakan sistem/produk tersebut.
             </p>
@@ -45,10 +41,17 @@ export default function Duc() {
             </div>
           </div>
         </section>
+        <div className='absolute w-full h-screen -z-10 flex items-center justify-center'>
+          <img
+            src='/assets/images/bg-green.svg'
+            alt='Background Image'
+            className='absolute object-cover translate-y-[150px] hidden md:flex '
+          />
+        </div>
 
-        <section className='container relative flex flex-col items-center gap-12' id='countdown'>
+        <section className='container relative flex flex-col items-center gap-12 md:pt-0 lg:pt-[120px]' id='countdown'>
           <TitleBox>Hitung Mundur</TitleBox>
-          <Countdown date={'2023-09-30T00:00:00+07:00'} />
+          <Countdown date={'2024-09-30T00:00:00+07:00'} />
           <Link href='https://dashboard.anforcom.com' target='_blank'>
             <Button>Daftar Sekarang</Button>
           </Link>
@@ -58,34 +61,34 @@ export default function Duc() {
           <TitleBox>Hadiah</TitleBox>
           <div className='flex flex-row gap-12 items-end h-[475px]'>
             <div className=' self-start flex flex-col items-center gap-16'>
-              <Image src={'/assets/images/juara1.svg'} alt='' width={240} height={240} />
+              <Image src={'/assets/images/1.svg'} alt='' width={240} height={240} />
               <div className='flex flex-col items-center'>
-                <h3 className='text-white text-2xl font-bold font-serif tracking-[0.48px]'>Juara 1</h3>
-                <p className='text-white text-2xl font-sans tracking-[0.48px]'>Rp. 3.000.000</p>
+                <h3 className='text-cwhite-9 text-2xl font-bold font-serif tracking-[0.48px]'>Juara 1</h3>
+                <p className='text-cwhite-9 text-2xl font-sans tracking-[0.48px]'>Rp. 3.000.000</p>
               </div>
             </div>
             <div className='order-first flex flex-col items-center gap-16'>
-              <Image src={'/assets/images/juara2.svg'} alt='' width={240} height={240} />
+              <Image src={'/assets/images/2.svg'} alt='' width={240} height={240} />
               <div className='flex flex-col items-center'>
-                <h3 className='text-white text-2xl font-bold font-serif tracking-[0.48px]'>Juara 2</h3>
-                <p className='text-white text-2xl font-sans tracking-[0.48px]'>Rp. 2.000.000</p>
+                <h3 className='text-cwhite-9 text-2xl font-bold font-serif tracking-[0.48px]'>Juara 2</h3>
+                <p className='text-cwhite-9 text-2xl font-sans tracking-[0.48px]'>Rp. 2.000.000</p>
               </div>
             </div>
             <div className='flex flex-col items-center gap-16'>
-              <Image src={'/assets/images/juara3.svg'} alt='' width={240} height={240} />
+              <Image src={'/assets/images/3.svg'} alt='' width={240} height={240} />
               <div className='flex flex-col items-center'>
-                <h3 className='text-white text-2xl font-bold font-serif tracking-[0.48px]'>Juara 3</h3>
-                <p className='text-white text-2xl font-sans tracking-[0.48px]'>Rp. 1.000.000</p>
+                <h3 className='text-cwhite-9 text-2xl font-bold font-serif tracking-[0.48px]'>Juara 3</h3>
+                <p className='text-cwhite-9 text-2xl font-sans tracking-[0.48px]'>Rp. 1.000.000</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className='relative w-[750%]' id='highlight'>
+        <section className='h-[400px]' id='highlight'>
           <Highlight />
         </section>
 
-        <section className='container relative flex flex-col items-center gap-16' id='contact'>
+        <section className='container relative flex flex-col items-center gap-16 mb-[80px]' id='contact'>
           <TitleBox>Contact Person</TitleBox>
           <ContactBox name='Resma' number='0856 0174 1347' />
         </section>

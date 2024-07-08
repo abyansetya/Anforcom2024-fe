@@ -5,8 +5,8 @@ export default function Footer() {
   return (
     <footer className='relative pb-[128px] md:pb-24 py-0 overflow-hidden'>
       <div className='container flex w-full justify-center'>
-        <div className='flex flex-col w-full max-w-[983px] h-max rounded-[42px] border-4 border-cpurple-4'>
-          <div className='bg-secondary1 rounded-t-[40px] pt-[46px] pb-8 px-10 flex flex-col gap-8 border-b-4 border-b-cpurple-4'>
+        <div className='flex flex-col w-full max-w-[983px] h-max rounded-[42px] border-4 border-cgreen-4'>
+          <div className='bg-cgreen-5 rounded-t-[40px] pt-[46px] pb-8 px-10 flex flex-col gap-8 border-b-4 border-b-cgreen-4'>
             <Image src={'/assets/images/anforcom-vector.svg'} alt='' height={32} width={32} />
             <p className='font-sans text-white text-sm md:text-base'>
               A series of events and competitions organized by the Computer Science Students of Diponegoro University
@@ -30,8 +30,8 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          <div className='bg-secondary1 rounded-b-[40px] pt-[26px] pb-[30px] px-10 flex gap-4 items-center'>
-            <Image src={'/assets/images/angkasa-juang.svg'} alt='' height={39} width={24} />
+          <div className='bg-cgreen-5 rounded-b-[40px] pt-[26px] pb-[30px] px-10 flex gap-4 items-center'>
+            <Image src={'/assets/images/himpunan.svg'} alt='' height={43} width={43} />
             <div className='flex flex-col md:flex-row gap-1'>
               <p className='font-sans text-white text-xs md:text-sm'>&#169; 2024</p>
               <p className='font-sans text-white text-xs md:text-sm'>
@@ -41,7 +41,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className='w-screen h-[125%] bg-[#120C3B] blur-[65px] rounded-t-[50%] -bottom-[42.5%] absolute -z-10' />
+      <div className='w-screen h-[125%] bg-cgreen-3 blur-[65px] rounded-t-[50%] -bottom-[42.5%] absolute -z-10' />
     </footer>
   )
 }
