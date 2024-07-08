@@ -34,7 +34,7 @@ export default function Footer() {
             </div>
 
             {/* mobile */}
-            <div className=' text-primary font-serif gap-6 flex-row md:flex-row text-sm md:text-base flex'>
+            <div className=' text-primary font-serif gap-6 flex-row md:flex-row text-sm md:text-base flex sm:hidden'>
               <Link className='underline-offset-[7px] hover:underline' href='https://www.instagram.com/anforcom/'>
                 <InstagramIcon />
               </Link>

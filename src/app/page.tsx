@@ -32,12 +32,7 @@ export default function Home() {
   return (
     <>
       <Modal isVisible={isModalVisible} onClose={handleCloseModal} />
-      <main className='flex min-h-screen h-full flex-col items-center py-16 overflow-hidden gap-10 sm:gap-20 md:gap-32'>
-        <div className='relative flex'>
-          <div className='w-[1500px] h-[1500px] bg-[#EE426640] blur-[72.5px] rounded-full -left-[600px] -top-[900px] absolute -z-10' />
-          <div className='w-[1500px] h-[1500px] bg-[#FCD30740] blur-[72.5px] rounded-full -right-[600px] -top-[900px] absolute -z-10' />
-        </div>
-
+      <main className='flex min-h-screen h-full flex-col items-center lg:pt-[100px] md:pt-[200px] pt-[150px] overflow-hidden gap-10 sm:gap-20 md:gap-32'>
         <section
           className='container max-w-[983px] flex relative flex-col items-center w-full my-10 gap-2 md:gap-5'
           id='hero'
@@ -45,21 +40,21 @@ export default function Home() {
           <div>
             <Image
               className='translate-x-[1.5vw] block md:hidden'
-              src={'/assets/images/mobile-hero-home.svg'}
+              src={'/assets/images/home.svg'}
               alt='hero-title'
               height={330}
               width={983}
             />
             <Image
               className='translate-x-[1.5vw] hidden md:block'
-              src={'/assets/images/desktop-hero-home.svg'}
+              src={'/assets/images/home.svg'}
               alt='hero-title'
               height={330}
               width={983}
             />
           </div>
           <div className='flex flex-col items-center gap-6 md:gap-11'>
-            <p className='text-white text-center font-normal text-xs sm:text-sm md:text-base opacity-50 font-sans w-full md:w-2/3'>
+            <p className='text-cwhite-9 text-center font-normal text-xs sm:text-sm md:text-base opacity-50 font-sans w-full md:w-2/3'>
               A series of events and competitions organized by the Computer Science Students of Diponegoro University
               that aims to introduce the Technology Culture to the community.
             </p>
@@ -77,18 +72,25 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <div className='absolute w-full h-screen -z-10 flex items-center justify-center'>
+          <img
+            src='/assets/images/bg-green.svg'
+            alt='Background Image'
+            className='absolute object-cover md:translate-y-[150px] hidden md:flex  '
+          />
+        </div>
 
         <section
-          className='container max-w-[983px] relative flex flex-col items-center gap-6 sm:gap-8 md:gap-12'
+          className='container max-w-[983px] p-0 md:pt-0 lg:pt-[120px] relative flex flex-col items-center'
           id='countdown'
         >
           <TitleBox>Menuju Puncak Acara</TitleBox>
-          <Countdown date={'2023-09-30T00:00:00+07:00'} />
+          <Countdown date={'2024-09-21T00:00:00+07:00'} />
           <div className='flex flex-col gap-4  sm:gap-5 md:gap-6 items-center'>
             <Link href='https://dashboard.anforcom.com' target='_blank'>
               <Button>Daftar Sekarang</Button>
             </Link>
-            <Link href='#regtutorial' className='text-primary font-sans hover:text-cwhite-7 underline'>
+            <Link href='#regtutorial' className='text-cgreen-5 font-sans hover:text-cwhite-7 underline'>
               Tutorial Pendaftaran
             </Link>
           </div>
