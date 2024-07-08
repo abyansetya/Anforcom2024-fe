@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Highlight() {
   return (
-    <div className=' flex overflow-hidden justify-center w-full'>
+    <div className=' flex overflow-hidden justify-center w-full '>
       <div className='absolute flex overflow-hidden'>
         <Image
           className='w-[328px] h-[368px] object-cover rotate-[20deg] translate-x-[-150px]'

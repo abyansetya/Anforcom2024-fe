@@ -9,7 +9,7 @@ import Link from 'next/link'
 export default function Duc() {
   return (
     <>
-      <main className='flex min-h-screen h-full flex-col items-center px-7 lg:pt-[100px] md:pt-[200px] pt-[100px]  overflow-hidden gap-28'>
+      <main className='relative flex min-h-screen h-full flex-col items-center px-7 lg:pt-[100px] md:pt-[200px] pt-[150px] overflow-hidden gap-16 md:gap-32'>
         <section className=' w-full' id='hero'>
           <div className='absolute w-full left-0 right-0 '>
             <Image
@@ -21,7 +21,7 @@ export default function Duc() {
               width={1700}
             />
           </div>
-          <div className='relative flex flex-col items-center gap-11 pt-[300px]'>
+          <div className='relative flex flex-col items-center gap-11 md:pt-[300px] pt-[170px]'>
             <p className='text-cwhite-9 text-center font-normal text-base opacity-50 font-sans w-full md:w-2/3'>
               UI/UX adalah salah satu cabang lomba dari serangkaian kegiatan ANFORCOM 2024 yang dapat diikuti oleh SLTA
               sederajat dan mahasiswa se-Indonesia. Kegiatan ini berupa kompetisi desain antarmuka sistem/produk yang
@@ -59,26 +59,26 @@ export default function Duc() {
 
         <section className='container relative flex flex-col items-center gap-12' id='prize'>
           <TitleBox>Hadiah</TitleBox>
-          <div className='flex flex-row gap-12 items-end h-[475px]'>
+          <div className='flex flex-row gap-[60px] items-end h-[475px] scale-75 md:scale-100'>
             <div className=' self-start flex flex-col items-center gap-16'>
               <Image src={'/assets/images/1.svg'} alt='' width={240} height={240} />
               <div className='flex flex-col items-center'>
                 <h3 className='text-cwhite-9 text-2xl font-bold font-serif tracking-[0.48px]'>Juara 1</h3>
-                <p className='text-cwhite-9 text-2xl font-sans tracking-[0.48px]'>Rp. 3.000.000</p>
+                <p className='text-cwhite-9 text-2xl font-sans tracking-[0.48px]'>Rp 3.000.000</p>
               </div>
             </div>
-            <div className='order-first flex flex-col items-center gap-16'>
+            <div className='order-first flex flex-col items-center gap-16 '>
               <Image src={'/assets/images/2.svg'} alt='' width={240} height={240} />
-              <div className='flex flex-col items-center'>
+              <div className='flex flex-col items-center '>
                 <h3 className='text-cwhite-9 text-2xl font-bold font-serif tracking-[0.48px]'>Juara 2</h3>
-                <p className='text-cwhite-9 text-2xl font-sans tracking-[0.48px]'>Rp. 2.000.000</p>
+                <p className='text-cwhite-9 text-2xl font-sans tracking-[0.48px] '>Rp 2.000.000</p>
               </div>
             </div>
-            <div className='flex flex-col items-center gap-16'>
+            <div className='flex flex-col items-center gap-16 '>
               <Image src={'/assets/images/3.svg'} alt='' width={240} height={240} />
               <div className='flex flex-col items-center'>
                 <h3 className='text-cwhite-9 text-2xl font-bold font-serif tracking-[0.48px]'>Juara 3</h3>
-                <p className='text-cwhite-9 text-2xl font-sans tracking-[0.48px]'>Rp. 1.000.000</p>
+                <p className='text-cwhite-9 text-2xl font-sans tracking-[0.48px]'>Rp 1.000.000</p>
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@ export default function Duc() {
 
         <section className='container relative flex flex-col items-center gap-16 mb-[80px]' id='contact'>
           <TitleBox>Contact Person</TitleBox>
-          <ContactBox name='Resma' number='0856 0174 1347' />
+          <ContactBox name='Qun Alfadrian' number='0819 0382 0746' />
         </section>
       </main>
     </>

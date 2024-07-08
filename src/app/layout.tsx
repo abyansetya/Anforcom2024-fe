@@ -12,7 +12,7 @@ import { Metadata } from 'next'
 import Whatsapp from '@/components/whatsapp'
 
 export const metadata: Metadata = {
-  title: 'Anforcom 2023',
+  title: 'Anforcom 2024',
   description:
     'A series of events and competitions organized by the Computer Science Students of Diponegoro University that aims to introduce the Technology Culture to the community.',
   keywords: ['competition', 'anforcom', 'ui-ux', 'logic', 'it competition']
