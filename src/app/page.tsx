@@ -13,6 +13,7 @@ import FaqAccordion from '@/components/faq-accordion'
 import Link from 'next/link'
 import Modal from '@/components/Modal'
 import Sponsor from '@/components/sponsor'
+import Linimasa from '@/components/linimasa'
 
 export default function Home() {
   const [isModalVisible, setIsModalVisible] = useState(false)
@@ -98,12 +99,14 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='container max-w-[983px] relative flex flex-col items-center gap-14' id='timeline'>
+        <section className=' relative flex flex-col items-center gap-14' id='timeline'>
           <TitleBox>Linimasa</TitleBox>
-
-          <div className='flex flex-col w-full justify-center lg:flex-row lg:gap-1'>
-            <Timeline data={timelineData} />
+          <div className='w-full h-[500px] '>
+            <Linimasa />
           </div>
+          {/* <div className='flex flex-col w-full justify-center lg:flex-row lg:gap-1'>
+            <Timeline data={timelineData} />
+          </div> */}
         </section>
 
         <section className='h-[400px]' id='highlight'>
