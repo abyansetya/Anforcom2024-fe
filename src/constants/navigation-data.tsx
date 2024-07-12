@@ -2,12 +2,12 @@ import { IconArtboard, IconHome2, IconUsers } from '@tabler/icons-react'
 
 const navigationData = [
   {
-    label: 'Beranda',
+    label: 'Home',
     href: '/',
     icon: <IconHome2 />
   },
   {
-    label: 'Kompetisi',
+    label: 'Competition',
     href: '/competition',
     icon: <IconArtboard />,
     subMenu: [
@@ -22,8 +22,8 @@ const navigationData = [
     ]
   },
   {
-    label: 'Bootcamp',
-    href: '/bootcamp',
+    label: 'workshop',
+    href: '/workshop',
     icon: <IconUsers />
   }
 ]

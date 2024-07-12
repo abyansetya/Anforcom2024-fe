@@ -74,19 +74,18 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className='absolute w-full h-screen -z-10 flex items-center justify-center'>
+        <div className='absolute w-full h-screen -z-10  flex items-center justify-center'>
           <img
             src='/assets/images/bg-green.svg'
             alt='Background Image'
-            className='absolute object-cover md:translate-y-[150px] hidden md:flex  '
+            className='absolute object-cover  md:translate-y-[0px] lg:translate-y-[150px] xl:translate-y-[90px] hidden  md:flex  '
           />
         </div>
 
-        <section className='h-[150px] '>
-          <Sponsor />
-        </section>
+        {/* waiting for sponsor */}
+        <section className='h-[50px] w-full  '>{/* <Sponsor /> */}</section>
 
-        <section className='container max-w-[983px] p-0  relative flex flex-col items-center' id='countdown'>
+        <section className='container w-screen justify-center p-0  relative flex flex-col items-center' id='countdown'>
           <TitleBox>Menuju Puncak Acara</TitleBox>
           <Countdown date={'2024-09-21T00:00:00+07:00'} />
           <div className='flex flex-col gap-4  sm:gap-5 md:gap-6 items-center'>
@@ -99,9 +98,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className=' relative flex flex-col items-center gap-14' id='timeline'>
+        <section className=' relative flex flex-col items-center gap-5 mt-[50px] md:mt-0' id='timeline'>
           <TitleBox>Linimasa</TitleBox>
-          <div className='w-full h-[500px] '>
+          <div className='w-full h-[200px] md:h-[500px] overflow-hidden '>
             <Linimasa />
           </div>
           {/* <div className='flex flex-col w-full justify-center lg:flex-row lg:gap-1'>
@@ -109,11 +108,11 @@ export default function Home() {
           </div> */}
         </section>
 
-        <section className='h-[400px]' id='highlight'>
+        <section className='md:h-[400px] h-[800px] w-full' id='highlight'>
           <Highlight />
         </section>
 
-        <section className='relative w-full' id='teaser'>
+        <section className='relative w-full ' id='teaser'>
           <div className='container max-w-[983px] w-full flex flex-col items-center gap-10 md:gap-20 '>
             <TitleBox>Video Teaser</TitleBox>
             <div className='relative bg-cgreen-4 rounded-3xl p-3 md:p-6 w-full aspect-video'>
@@ -175,7 +174,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className='relative w-full' id='regtutorial'>
+        <section className='relative w-full mt-[100px]' id='regtutorial'>
           <div className='container max-w-[983px] w-full flex flex-col items-center gap-10 md:gap-20 '>
             <TitleBox>Tutorial Pendaftaran</TitleBox>
             <div className='relative bg-cgreen-4 rounded-3xl p-3 md:p-6 w-full aspect-video'>

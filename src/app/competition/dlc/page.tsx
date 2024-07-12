@@ -67,14 +67,14 @@ export default function Dlc() {
                 <p className='text-cgreen-5 sm:text-2xl text-xl font-sans tracking-[0.48px]'>Informatika Undip</p>
               </div>
             </div>
-            <div className='order-first flex flex-col items-center gap-16 '>
+            <div className='order-first flex flex-col items-center gap-16 translate-x-[20px] md:translate-x-0'>
               <Image src={'/assets/images/2.svg'} alt='' width={240} height={240} />
               <div className='flex flex-col items-center '>
                 <h3 className='text-cwhite-9 text-2xl font-bold font-serif tracking-[0.48px]'>Juara 2</h3>
                 <p className='text-cwhite-9 text-2xl font-sans tracking-[0.48px] '>Rp 2.000.000</p>
               </div>
             </div>
-            <div className='flex flex-col items-center gap-16 '>
+            <div className='flex flex-col items-center gap-16 translate-x-[-20px] md:translate-x-0 '>
               <Image src={'/assets/images/3.svg'} alt='' width={240} height={240} />
               <div className='flex flex-col items-center'>
                 <h3 className='text-cwhite-9 text-2xl font-bold font-serif tracking-[0.48px]'>Juara 3</h3>
@@ -84,11 +84,11 @@ export default function Dlc() {
           </div>
         </section>
 
-        <section className='h-[400px]' id='highlight'>
+        <section className='md:h-[400px] h-[800px] w-full' id='highlight'>
           <Highlight />
         </section>
 
-        <section className='container relative flex flex-col items-center gap-16 mb-[80px]' id='contact'>
+        <section className='relative flex flex-col items-center gap-16 mb-[80px] ' id='contact'>
           <TitleBox>Contact Person</TitleBox>
           <ContactBox name='Khoirul ' number='0838 4325 5643' />
         </section>

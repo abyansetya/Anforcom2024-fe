@@ -3,9 +3,10 @@ import Image from 'next/image'
 export default function Highlight() {
   return (
     <div className=' flex overflow-hidden justify-center w-full '>
-      <div className='absolute flex overflow-hidden'>
+      {/* desktop & tablet */}
+      <div className='absolute md:flex hidden overflow-hidden'>
         <Image
-          className='w-[328px] h-[368px] object-cover rotate-[20deg] translate-x-[-150px]'
+          className='w-[328px] h-[368px]  object-cover rotate-[20deg] translate-x-[-150px]'
           alt=''
           src={'/assets/images/polaroid.png'}
           width={328}
@@ -34,6 +35,52 @@ export default function Highlight() {
         />
         <Image
           className='w-[328px] h-[368px] object-cover  translate-x-[-300px]'
+          alt=''
+          src={'/assets/images/polaroid.png'}
+          width={328}
+          height={368}
+        />
+      </div>
+
+      {/* mobile */}
+      <div className='md:hidden flex w-full h-full absolute overflow-hidden'>
+        <Image
+          className='w-[250px] absolute object-cover left-0 translate-y-[50px] translate-x-[-30px]'
+          alt=''
+          src={'/assets/images/polaroid.png'}
+          width={328}
+          height={368}
+        />
+        <Image
+          className='w-[250px] absolute object-cover left-0 translate-y-[50px] rotate-[30deg] translate-x-[120px]'
+          alt=''
+          src={'/assets/images/polaroid.png'}
+          width={328}
+          height={368}
+        />
+        <Image
+          className='w-[250px] absolute object-cover left-0 translate-y-[250px] rotate-[10deg] translate-x-[-30px]'
+          alt=''
+          src={'/assets/images/polaroid.png'}
+          width={328}
+          height={368}
+        />
+        <Image
+          className='w-[250px] absolute object-cover left-0 translate-y-[220px] rotate-[10deg] translate-x-[130px]'
+          alt=''
+          src={'/assets/images/polaroid.png'}
+          width={328}
+          height={368}
+        />
+        <Image
+          className='w-[250px] absolute object-cover left-0 translate-y-[450px] rotate-[30deg] translate-x-[-50px]'
+          alt=''
+          src={'/assets/images/polaroid.png'}
+          width={328}
+          height={368}
+        />
+        <Image
+          className='w-[250px] absolute object-cover left-0 translate-y-[450px] rotate-[-20deg] translate-x-[140px]'
           alt=''
           src={'/assets/images/polaroid.png'}
           width={328}

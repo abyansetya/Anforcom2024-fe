@@ -2,7 +2,7 @@ export const questionData = [
   {
     question: 'Apa saja yang diselenggarakan oleh Anforcom 2024?',
     answer:
-      'Di Anforcom 2024 terdapat lomba Diponegoro UI/UX Competition (DUC) dan Diponegoro Logic Competition (DLC). Selain itu, Anforcom 2024 menyelenggarakan Bootcamp lho.'
+      'Di Anforcom 2024 terdapat lomba Diponegoro UI/UX Competition (DUC) dan Diponegoro Logic Competition (DLC). Selain itu, Anforcom 2024 menyelenggarakan workshop lho.'
   },
   {
     question: 'Siapa saja yang dapat mengikuti lomba DUC dan DLC?',
@@ -49,7 +49,7 @@ export const questionData = [
     answer: 'Rulebook dapat diakses pada <TBA>.'
   },
   {
-    question: 'Kapan bootcamp Anforcom 2024 dilaksanakan? Online atau offline?',
+    question: 'Kapan workshop Anforcom 2024 dilaksanakan? Online atau offline?',
     answer:
       'Untuk seminar dilaksanakan pada tanggal 21 September 2024 bersamaan dengan Final Day secara Offline di FSM UNDIP.'
   },
