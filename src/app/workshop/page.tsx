@@ -72,9 +72,12 @@ export default function Event() {
           </div>
         </section>
 
-        <section className='container relative flex flex-col items-center gap-12' id='countdown'>
+        <section
+          className='container max-w-[983px] p-0 md:pt-[120px] lg:pt-[160px] relative flex flex-col items-center'
+          id='countdown'
+        >
           <TitleBox>Hitung Mundur</TitleBox>
-          <Countdown date={'2024-09-21T00:00:00+07:00'} />
+          <Countdown date={'2024-09-30T00:00:00+07:00'} />
           <Link href='https://dashboard.anforcom.com' target='_blank'>
             <Button>Daftar Sekarang</Button>
           </Link>

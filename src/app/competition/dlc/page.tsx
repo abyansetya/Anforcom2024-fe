@@ -44,7 +44,10 @@ export default function Dlc() {
           />
         </div>
 
-        <section className='container relative flex flex-col items-center gap-12 md:pt-0 lg:pt-[120px]' id='countdown'>
+        <section
+          className='container max-w-[983px] p-0 md:pt-[120px] lg:pt-[160px] relative flex flex-col items-center'
+          id='countdown'
+        >
           <TitleBox>Hitung Mundur</TitleBox>
           <Countdown date={'2024-09-30T00:00:00+07:00'} />
           <Link href='https://dashboard.anforcom.com' target='_blank'>
