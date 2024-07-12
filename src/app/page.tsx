@@ -18,15 +18,15 @@ import Linimasa from '@/components/linimasa'
 export default function Home() {
   const [isModalVisible, setIsModalVisible] = useState(false)
 
-  useEffect(() => {
-    const lastVisit = localStorage.getItem('lastVisit')
-    const today = new Date().toDateString()
+  // useEffect(() => {
+  //   const lastVisit = localStorage.getItem('lastVisit')
+  //   const today = new Date().toDateString()
 
-    if (lastVisit !== today) {
-      setIsModalVisible(true)
-      localStorage.setItem('lastVisit', today)
-    }
-  }, [])
+  //   if (lastVisit !== today) {
+  //     setIsModalVisible(true)
+  //     localStorage.setItem('lastVisit', today)
+  //   }
+  // }, [])
 
   const handleCloseModal = () => {
     setIsModalVisible(false)
