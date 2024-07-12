@@ -41,10 +41,6 @@ export const questionData = [
       'Ada, peserta lomba DUC dapat memilih subtema yang telah ditentukan, diantaranya yaitu: Life Management (ex. Planner App), Money Management, Tourism and Culture, Health Issue, Social Issue'
   },
   {
-    question: 'Apakah ada simulasi penyisihan DLC terlebih dahulu?',
-    answer: 'Ya, ada yang dilakukan pada tanggal 22 September 2024 secara Online.'
-  },
-  {
     question: 'Dimana rulebook DUC dan DLC dapat diakses?',
     answer: 'Rulebook dapat diakses pada <TBA>.'
   },
