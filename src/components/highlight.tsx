@@ -43,7 +43,7 @@ export default function Highlight() {
       </div>
 
       {/* mobile */}
-      <div className='md:hidden flex w-full h-full absolute overflow-hidden'>
+      <div className='md:hidden flex w-full h-full absolute overflow-hidden justify-center'>
         <Image
           className='w-[250px] absolute object-cover left-0 translate-y-[50px] translate-x-[-30px]'
           alt=''
@@ -52,7 +52,7 @@ export default function Highlight() {
           height={368}
         />
         <Image
-          className='w-[250px] absolute object-cover left-0 translate-y-[50px] rotate-[30deg] translate-x-[120px]'
+          className='w-[250px] absolute object-cover  translate-y-[50px] rotate-[30deg] right-0'
           alt=''
           src={'/assets/images/polaroid.png'}
           width={328}
@@ -66,7 +66,7 @@ export default function Highlight() {
           height={368}
         />
         <Image
-          className='w-[250px] absolute object-cover left-0 translate-y-[220px] rotate-[10deg] translate-x-[130px]'
+          className='w-[250px] absolute object-cover  translate-y-[220px] rotate-[10deg] right-0'
           alt=''
           src={'/assets/images/polaroid.png'}
           width={328}
@@ -80,7 +80,7 @@ export default function Highlight() {
           height={368}
         />
         <Image
-          className='w-[250px] absolute object-cover left-0 translate-y-[450px] rotate-[-20deg] translate-x-[140px]'
+          className='w-[250px] absolute object-cover right-0 translate-y-[450px] rotate-[-20deg]'
           alt=''
           src={'/assets/images/polaroid.png'}
           width={328}

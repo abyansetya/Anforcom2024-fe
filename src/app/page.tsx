@@ -107,8 +107,7 @@ export default function Home() {
             <Timeline data={timelineData} />
           </div> */}
         </section>
-
-        <section className='md:h-[400px] h-[800px] w-full' id='highlight'>
+        <section className='md:h-[400px] h-[900px] w-full' id='highlight'>
           <Highlight />
         </section>
 
