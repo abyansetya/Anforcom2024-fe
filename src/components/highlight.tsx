@@ -43,7 +43,7 @@ export default function Highlight() {
       </div>
 
       {/* mobile */}
-      <div className='md:hidden flex w-full h-full absolute overflow-hidden justify-center'>
+      <div className='md:hidden flex w-full h-[900px] absolute overflow-hidden justify-center '>
         <Image
           className='w-[250px] absolute object-cover left-0 translate-y-[50px] translate-x-[-30px]'
           alt=''
