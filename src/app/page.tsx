@@ -41,15 +41,8 @@ export default function Home() {
         >
           <div>
             <Image
-              className='translate-x-[1.5vw] block md:hidden'
-              src={'/assets/images/home.svg'}
-              alt='hero-title'
-              height={330}
-              width={983}
-            />
-            <Image
-              className='translate-x-[1.5vw] hidden md:block'
-              src={'/assets/images/home.svg'}
+              className='translate-x-[1.5vw]'
+              src={'/assets/images/newhome.svg'}
               alt='hero-title'
               height={330}
               width={983}
@@ -107,6 +100,7 @@ export default function Home() {
             <Timeline data={timelineData} />
           </div> */}
         </section>
+        <TitleBox>Highlight</TitleBox>
         <section className='md:h-[400px] h-[1000px] w-full' id='highlight'>
           <Highlight />
         </section>
@@ -149,7 +143,7 @@ export default function Home() {
                 className='rounded-lg'
                 width='100%'
                 height='100%'
-                src='https://www.youtube.com/embed/7ReUxB037Rk'
+                src='https://www.youtube.com/embed/EKFrhmfAbcM?si=WQMO_GspPeploSeY'
                 title='Anforcom Teaser'
                 frameBorder='0'
                 allow='accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
@@ -157,7 +151,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className='flex flex-col gap-2 absolute right-0 left-0 -z-10 -bottom-20 md:-bottom-50 lg:-bottom-36'>
+          <div className='flex flex-col gap-2 absolute right-0 left-0 -z-10 translate-y-[-60px] -bottom-20 md:-bottom-50 lg:-bottom-36'>
             {[1, 2, 3, 4].map((_item, index) => (
               <div className='flex' key={index}>
                 <span
@@ -219,7 +213,7 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className='flex flex-col gap-2 absolute right-0 left-0 -z-10 -bottom-20 md:-bottom-50 lg:-bottom-36'>
+          <div className='flex flex-col gap-2 absolute right-0 translate-y-[-60px] left-0 -z-10 -bottom-20 md:-bottom-50 lg:-bottom-36'>
             {[1, 2, 3, 4].map((_item, index) => (
               <div className='flex' key={index}>
                 <span
