@@ -12,11 +12,17 @@ const NotFoundPage = () => {
         <div className='flex flex-col relative w-full gap-3'>
           <p className='text-cwhite-9 text-2xl md:text-6xl font-bold font-serif text-center'>404</p>
           <p className='text-cwhite-9 text-base md:text-2xl md:text2xl font-bold font-serif text-center'>
-            Uh-oh! You&apos;re lost in space.
+            Beep Boop! Page Not Found
           </p>
-          <p className='text-cwhite-9 text-sm font-light font-serif text-center'>
-            It seems the page you&apos;re looking for has floated away.
+          <p className='text-cwhite-9 text-sm 2xl:text-lg font-light font-serif text-center'>
+            It seems the page you&apos;re looking for doesn&apos;t exist. Lyra is on the case!
           </p>
+          <a
+            href='/'
+            className='bg-cgreen-5 font-serif text-center text-white px-4 py-2 rounded hover:bg-cgreen-6 transition'
+          >
+            Go Home
+          </a>
         </div>
       </section>
     </main>

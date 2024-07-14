@@ -14,14 +14,9 @@ const Linimasa: React.FC = () => {
   const [isTablet, setIsTablet] = useState<boolean>(false)
   const [images, setImages] = useState<Image[]>([])
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768)
-      setIsTablet(window.innerWidth > 768 && window.innerWidth <= 1024)
-    }
-
-    window.addEventListener('resize', handleResize)
-    handleResize()
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768)
+    setIsTablet(window.innerWidth > 768 && window.innerWidth <= 1024)
 
     const desktopPositions: Image[] = [
       { id: 1, positionX: 0, positionY: -120, src: 'assets/images/PBatch1.svg' },
@@ -53,7 +48,11 @@ const Linimasa: React.FC = () => {
     setImages(
       window.innerWidth <= 768 ? mobilePositions : window.innerWidth <= 1024 ? tabletPositions : desktopPositions
     )
+  }
 
+  useEffect(() => {
+    handleResize() // Initial call to set the state based on the current window size
+    window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
@@ -179,16 +178,16 @@ const Linimasa: React.FC = () => {
   }
 
   return (
-    <div className='w-full relative'>
-      <img src={'assets/images/lengkung.svg'} className='w-full' />
+    <div className='w-full relative overflow-hidden'>
+      <img src={'assets/images/lengkung.svg'} className='w-full h-auto object-cover' />
 
       {/* desktop */}
-      <div className='hidden lg:flex w-full'>
+      <div className='hidden lg:flex w-full justify-center lg:translate-x-[120px]'>
         {images.map((image) => (
           <motion.img
             key={image.id}
             id={String(image.id)}
-            className={`self-end w-[250px] flex`}
+            className={` w-[250px]`}
             src={image.src}
             alt=''
             animate={{ x: image.positionX, y: image.positionY }}
@@ -198,7 +197,7 @@ const Linimasa: React.FC = () => {
       </div>
 
       {/* tablet */}
-      <div className='hidden md:flex lg:hidden w-full'>
+      <div className='hidden md:flex lg:hidden w-full justify-center translate-x-[200px]'>
         {images.map((image) => (
           <motion.img
             key={image.id}
@@ -213,7 +212,7 @@ const Linimasa: React.FC = () => {
       </div>
 
       {/* mobile */}
-      <div className='flex md:hidden'>
+      <div className='flex md:hidden w-full justify-center  translate-x-[170px] sm:translate-x-[160px]'>
         {images.map((image) => (
           <motion.img
             key={image.id}
@@ -229,7 +228,7 @@ const Linimasa: React.FC = () => {
       <button
         disabled={move === 1}
         onClick={moveRight}
-        className='absolute flex left-0 top-1/2 transform -translate-y-1/2 disabled:cursor-not-allowed bg-gray-300 p-2'
+        className='absolute flex left-0 top-1/2 transform z-[8] -translate-y-1/2 disabled:cursor-not-allowed bg-gray-300 p-2'
       >
         &lt;
       </button>

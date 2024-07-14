@@ -11,7 +11,7 @@ export default function Dlc() {
   return (
     <>
       <main className='flex min-h-screen h-full flex-col items-center lg:pt-[100px] md:pt-[200px] pt-[150px] overflow-hidden gap-10 sm:gap-20 md:gap-32'>
-        <div className='w-full relative sm:h-[150px] h-[70px] max-w-[1700px] mb-0 pb-0'>
+        <div className='w-full relative sm:h-[150px] h-[70px] max-w-[1900px] mb-0 pb-0'>
           <img className=' w-full absolute ' src={'/assets/images/dlc (1).svg'} alt='hero-title' />
         </div>
         <section
@@ -19,7 +19,7 @@ export default function Dlc() {
           id='hero'
         >
           <div className='flex flex-col items-center gap-6 md:gap-11'>
-            <p className='text-cgreen-9 text-center font-normal sm:mt-0 mt-[50px] xl:mt-[70px] text-xs sm:text-sm md:text-base opacity-50 font-sans w-full md:w-2/3'>
+            <p className='text-cgreen-9 text-center font-normal sm:mt-0 mt-[50px] xl:mt-[70px] 2xl:mt-[130px] text-xs sm:text-sm md:text-base 2xl:text-[20px] opacity-50 font-sans w-full md:w-2/3 2xl:w-[80%]'>
               (DLC) adalah salah satu cabang lomba dari serangkaian kegiatan ANFORCOM 2024 yang dapat diikuti oleh SLTA
               sederajat. Kegiatan ini bertujuan untuk mengasah kemampuan berpikir logis dan kemampuan problem solving
               secara kompetitif. Kompetisi ini terdiri dari 2 tahap, yaitu tahap penyisihan berupa cerdas cermat dan

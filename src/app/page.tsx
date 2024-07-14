@@ -51,7 +51,7 @@ export default function Home() {
             />
           </div>
           <div className='flex flex-col items-center gap-6 md:gap-11'>
-            <p className='text-cgreen-9 text-center font-normal sm:mt-0 mt-[50px] text-xs sm:text-sm md:text-base opacity-50 font-sans w-full md:w-2/3'>
+            <p className='text-cgreen-9 text-center font-normal sm:mt-0 mt-[50px]  text-xs sm:text-sm md:text-base 2xl:text-[20px] opacity-50 font-sans w-full md:w-2/3 2xl:w-[80%]'>
               A series of events and competitions organized by the Computer Science Students of Diponegoro University
               that aims to introduce the Technology Culture to the community.
             </p>
@@ -88,15 +88,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className=' relative flex flex-col items-center gap-5 mt-[50px] md:mt-0' id='timeline'>
-          <TitleBox>Linimasa</TitleBox>
-          <div className='w-full h-[200px] md:h-[500px] overflow-hidden '>
-            <Linimasa />
-          </div>
-          {/* <div className='flex flex-col w-full justify-center lg:flex-row lg:gap-1'>
-            <Timeline data={timelineData} />
-          </div> */}
-        </section>
+        <TitleBox>Linimasa</TitleBox>
+
+        <Linimasa />
+
         <TitleBox>Highlight</TitleBox>
 
         <section className='w-full md:h-[400px] h-[900px] max-w-screen-xl' id='highlight'>
@@ -106,7 +101,7 @@ export default function Home() {
         <section className='relative w-full ' id='teaser'>
           <div className='container max-w-[983px] w-full flex flex-col items-center gap-10 md:gap-20 '>
             <TitleBox>Video Teaser</TitleBox>
-            <div className='relative bg-cgreen-4 rounded-3xl p-3 md:p-6 w-full aspect-video'>
+            <div className='relative bg-cgreen-4 rounded-3xl p-3 md:p-4 w-full aspect-video'>
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[56px] md:max-w-[96px] right-16 md:-top-10 -top-4'
                 src={'/assets/images/terataipink.svg'}
