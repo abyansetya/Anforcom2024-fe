@@ -8,35 +8,35 @@ export default function Highlight() {
         <Image
           className='w-[328px] h-[368px] object-cover absolute rotate-[20deg] left-0 translate-x-[-150px]'
           alt=''
-          src={'/assets/images/polaroid.png'}
+          src={'/assets/images/polaroid (1).png'}
           width={328}
           height={368}
         />
         <Image
           className='w-[328px] h-[368px] object-cover absolute translate-x-[125px] left-[0px]'
           alt=''
-          src={'/assets/images/polaroid.png'}
+          src={'/assets/images/polaroid (2).png'}
           width={328}
           height={368}
         />
         <Image
           className='w-[328px] h-[368px] object-cover hidden lg:block  absolute rotate-[20deg] translate-x-[-60px] '
           alt=''
-          src={'/assets/images/polaroid.png'}
+          src={'/assets/images/polaroid (3).png'}
           width={328}
           height={368}
         />
         <Image
           className='w-[328px] h-[368px] object-cover absolute rotate-[20deg] translate-x-[-240px] right-0  '
           alt=''
-          src={'/assets/images/polaroid.png'}
+          src={'/assets/images/polaroid (4).png'}
           width={328}
           height={368}
         />
         <Image
           className='w-[328px] h-[368px] object-cover absolute rotate-[5deg] right-0 translate-x-[50px] '
           alt=''
-          src={'/assets/images/polaroid.png'}
+          src={'/assets/images/polaroid (5).png'}
           width={328}
           height={368}
         />
@@ -47,35 +47,35 @@ export default function Highlight() {
         <Image
           className='w-[250px] absolute object-cover left-0 translate-y-[50px] translate-x-[-30px]'
           alt=''
-          src={'/assets/images/polaroid.png'}
+          src={'/assets/images/polaroid (1).png'}
           width={328}
           height={368}
         />
         <Image
           className='w-[250px] absolute object-cover  translate-y-[50px] rotate-[30deg] right-0'
           alt=''
-          src={'/assets/images/polaroid.png'}
+          src={'/assets/images/polaroid (2).png'}
           width={328}
           height={368}
         />
         <Image
           className='w-[250px] absolute object-cover left-0 translate-y-[250px] rotate-[10deg] translate-x-[-30px]'
           alt=''
-          src={'/assets/images/polaroid.png'}
+          src={'/assets/images/polaroid (3).png'}
           width={328}
           height={368}
         />
         <Image
           className='w-[250px] absolute object-cover  translate-y-[220px] rotate-[10deg] right-0'
           alt=''
-          src={'/assets/images/polaroid.png'}
+          src={'/assets/images/polaroid (4).png'}
           width={328}
           height={368}
         />
         <Image
           className='w-[250px] absolute object-cover left-0 translate-y-[450px] rotate-[30deg] translate-x-[-50px]'
           alt=''
-          src={'/assets/images/polaroid.png'}
+          src={'/assets/images/polaroid (5).png'}
           width={328}
           height={368}
         />

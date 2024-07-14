@@ -48,6 +48,7 @@ const Linimasa: React.FC = () => {
     setImages(
       window.innerWidth <= 768 ? mobilePositions : window.innerWidth <= 1024 ? tabletPositions : desktopPositions
     )
+    setMove(1)
   }
 
   useEffect(() => {
