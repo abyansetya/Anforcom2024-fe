@@ -20,11 +20,11 @@ export const questionData = [
   {
     question: 'Kapan batas pendaftaran batch 1 & 2?',
     answer:
-      'Pendaftaran batch 1 dibuka dari 15 Juli 2024 - 31 Agustus 2024. Pendaftaran batch 2 dibuka dari 5 Agustus 2024 - 23 Agustus 2024.'
+      'Pendaftaran batch 1 dibuka dari 15 Juli 2024 - 31 Juli 2024. Pendaftaran batch 2 dibuka dari 5 Agustus 2024 - 23 Agustus 2024.'
   },
   {
     question: 'Bagaimana tata cara mendaftar lomba Anforcom 2024?',
-    answer: 'Untuk tutorial pendaftaran bisa dilihat di https://bit.ly/RulebookAnforcom2024.'
+    answer: 'Untuk tutorial pendaftaran bisa dilihat di https://youtu.be/Kp51sPjC7js'
   },
   {
     question: 'Berapa prize pool yang diberikan pada pemenang lomba Anforcom 2024?',
@@ -42,7 +42,7 @@ export const questionData = [
   },
   {
     question: 'Dimana rulebook DUC dan DLC dapat diakses?',
-    answer: 'Rulebook dapat diakses pada <TBA>.'
+    answer: 'Rulebook dapat diakses pada https://bit.ly/RulebookAnforcom2024.'
   },
   {
     question: 'Kapan workshop Anforcom 2024 dilaksanakan? Online atau offline?',
