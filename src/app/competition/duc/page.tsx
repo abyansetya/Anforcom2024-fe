@@ -72,7 +72,10 @@ export default function Duc() {
                   Daftar DUC
                 </Button>
               </Link>
-              <Link href='https://bit.ly/RulebookDUC2023' target='_blank'>
+              <Link
+                href='https://drive.google.com/drive/folders/14OSPAr1c_rfP3pKc5mTTjkWhaGGiRMnf?usp=sharing'
+                target='_blank'
+              >
                 <Button className='hover:bg-[#f4aea7]' color='secondary2' variant='light'>
                   Rulebook
                 </Button>

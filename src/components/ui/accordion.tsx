@@ -3,6 +3,7 @@
 import * as React from 'react'
 import * as AccordionPrimitive from '@radix-ui/react-accordion'
 import { ChevronDownIcon } from '@radix-ui/react-icons'
+import Link from 'next/link'
 
 import { cn } from '@/lib/utils'
 
@@ -46,7 +47,24 @@ const AccordionContent = React.forwardRef<
     )}
     {...props}
   >
-    <div className='p-6 text-sm md:text-base text-gray-200'>{children}</div>
+    <div className='p-6 text-sm md:text-base text-gray-200'>
+      {React.Children.map(children, (child) => {
+        // Check if the child is a string and replace any URLs with a Link component
+        if (typeof child === 'string') {
+          return child.split(' ').map((word, index) => {
+            if (word.includes('https://')) {
+              return (
+                <Link key={index} href={word} target='_blank' className='text-cwhite5 underline'>
+                  {word}
+                </Link>
+              )
+            }
+            return word + ' '
+          })
+        }
+        return child // Return the child unchanged if it's not a string
+      })}
+    </div>
   </AccordionPrimitive.Content>
 ))
 AccordionContent.displayName = AccordionPrimitive.Content.displayName

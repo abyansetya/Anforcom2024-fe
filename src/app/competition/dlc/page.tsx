@@ -31,7 +31,10 @@ export default function Dlc() {
                   Daftar DLC
                 </Button>
               </Link>
-              <Link href='https://bit.ly/RulebookDUC2023' target='_blank'>
+              <Link
+                href='https://drive.google.com/drive/folders/1VOWqnMSOt0e3qGI92lxwX2AaSBH4nNTM?usp=sharing'
+                target='_blank'
+              >
                 <Button className='hover:bg-[#f4aea7]' color='secondary2' variant='light'>
                   Rulebook
                 </Button>

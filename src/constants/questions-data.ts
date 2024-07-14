@@ -24,7 +24,7 @@ export const questionData = [
   },
   {
     question: 'Bagaimana tata cara mendaftar lomba Anforcom 2024?',
-    answer: 'Untuk tutorial pendaftaran bisa dilihat di sini (link/button tutorial).'
+    answer: 'Untuk tutorial pendaftaran bisa dilihat di https://bit.ly/RulebookAnforcom2024.'
   },
   {
     question: 'Berapa prize pool yang diberikan pada pemenang lomba Anforcom 2024?',
@@ -38,7 +38,7 @@ export const questionData = [
   {
     question: 'Apakah ada tema khusus yang ditentukan untuk pembuatan proposal DUC?',
     answer:
-      'Ada, peserta lomba DUC dapat memilih subtema yang telah ditentukan, diantaranya yaitu: Life Management (ex. Planner App), Money Management, Tourism and Culture, Health Issue, Social Issue'
+      'Tema lomba DUC ANFORCOM 2024 yaitu “Community Empowerment Through Creative Design”. Peserta lomba dapat memilih subtema yang telah disediakan, yaitu Good Health and Well Being; Quality Education; Industry, Innovation, and Infrastructure; serta Sustainable Cities and Communities'
   },
   {
     question: 'Dimana rulebook DUC dan DLC dapat diakses?',
@@ -48,12 +48,6 @@ export const questionData = [
     question: 'Kapan workshop Anforcom 2024 dilaksanakan? Online atau offline?',
     answer:
       'Untuk seminar dilaksanakan pada tanggal 21 September 2024 bersamaan dengan Final Day secara Offline di FSM UNDIP.'
-  },
-  {
-    question:
-      'Apakah ada biaya khusus untuk mengikuti seminar Anforcom? Siapa saja yang dapat mengikuti seminar Anforcom 2024?',
-    answer:
-      'Seminar Anforcom 2024 tidak dikenakan biaya (Gratis) dan bersifat umum. Jadi, siapapun dapat mengikuti seminar Anforcom 2024.'
   }
 ]
 
