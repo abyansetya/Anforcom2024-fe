@@ -12,10 +12,10 @@ const NotFoundPage = () => {
         <div className='flex flex-col relative w-full gap-3'>
           <p className='text-cwhite-9 text-2xl md:text-6xl font-bold font-serif text-center'>404</p>
           <p className='text-cwhite-9 text-base md:text-2xl md:text2xl font-bold font-serif text-center'>
-            Uh-oh! You're lost in space.
+            Uh-oh! You&apos;re lost in space.
           </p>
           <p className='text-cwhite-9 text-sm font-light font-serif text-center'>
-            It seems the page you're looking for has floated away.
+            It seems the page you&apos;re looking for has floated away.
           </p>
         </div>
       </section>
