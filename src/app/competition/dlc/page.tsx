@@ -31,7 +31,7 @@ export default function Dlc() {
                 </Button>
               </Link>
               <Link href='https://bit.ly/RulebookDUC2023' target='_blank'>
-                <Button color='primary' variant='outline'>
+                <Button className='hover:bg-[#f4aea7]' color='secondary2' variant='light'>
                   Rulebook
                 </Button>
               </Link>
