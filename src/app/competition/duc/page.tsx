@@ -10,19 +10,22 @@ import Background from '@/components/ui/backgroundview'
 export default function Duc() {
   return (
     <>
-      <main className='relative flex min-h-screen h-full flex-col items-center px-7 lg:pt-[100px] md:pt-[200px] pt-[150px] overflow-hidden gap-16 md:gap-32'>
-        <section className=' w-full' id='hero'>
-          <div className='absolute w-full left-0 right-0 '>
+      <main className=' flex min-h-screen h-full flex-col items-center lg:pt-[100px] md:pt-[200px] pt-[150px] overflow-hidden gap-10 sm:gap-20 md:gap-32'>
+        {/* <section
+          className='container max-w-[983px] flex relative flex-col items-center w-full mt-10 gap-2 md:gap-5'
+          id='hero'
+        >
+          {/* <div className='relative flex '>
             <Image
-              className='w-full'
+              className='w-full absolute '
               src={'/assets/images/duc.svg'}
               alt='hero-title'
               layout='responsive'
               height={330}
               width={1700}
             />
-          </div>
-          <div className='relative flex flex-col items-center gap-11 md:pt-[250px] lg:pt-[300px] pt-[170px]'>
+          </div> */}
+        {/* <div className='flex flex-col items-center gap-11 '>
             <p className='text-cwhite-9 text-center font-normal text-base opacity-50 font-sans w-full md:w-2/3'>
               UI/UX adalah salah satu cabang lomba dari serangkaian kegiatan ANFORCOM 2024 yang dapat diikuti oleh SLTA
               sederajat dan mahasiswa se-Indonesia. Kegiatan ini berupa kompetisi desain antarmuka sistem/produk yang
@@ -42,7 +45,49 @@ export default function Duc() {
             </div>
           </div>
         </section>
-        <Background />
+
+        <div className='relative w-full -z-10  flex items-center justify-center'>
+          <img
+            src='/assets/images/bg-green.svg'
+            alt='Background Image'
+            className='absolute object-cover  hidden  md:flex top-[-400px] '
+          />
+        </div> */}
+        <div className='w-full relative sm:h-[150px] h-[70px]  max-w-screen-xl mb-0 pb-0'>
+          <img className=' w-full absolute ' src={'/assets/images/duc.svg'} alt='hero-title' />
+        </div>
+        <section
+          className='container max-w-[983px] flex relative flex-col items-center w-full gap-2 md:gap-5'
+          id='hero'
+        >
+          <div className='flex flex-col items-center gap-6 md:gap-11'>
+            <p className='text-cwhite-9 text-center font-normal sm:mt-0 mt-[50px] text-xs sm:text-sm md:text-base opacity-50 font-sans w-full md:w-2/3'>
+              UI/UX adalah salah satu cabang lomba dari serangkaian kegiatan ANFORCOM 2024 yang dapat diikuti oleh SLTA
+              sederajat dan mahasiswa se-Indonesia. Kegiatan ini berupa kompetisi desain antarmuka sistem/produk yang
+              berorientasi pada kenyamanan dan kemudahan pengguna dalam menggunakan sistem/produk tersebut.
+            </p>
+            <div className='flex gap-4 md:gap-6'>
+              <Link href='https://dashboard.anforcom.com' target='_blank'>
+                <Button color='primary' variant='default'>
+                  Daftar DUC
+                </Button>
+              </Link>
+              <Link href='https://bit.ly/RulebookDUC2023' target='_blank'>
+                <Button color='primary' variant='outline'>
+                  Rulebook
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+        <div className='relative w-full -z-10  flex items-center justify-center'>
+          <img
+            src='/assets/images/bg-green.svg'
+            alt='Background Image'
+            className='absolute object-cover  hidden  md:flex lg:top-[-400px] '
+          />
+        </div>
+
         <section
           className='container max-w-[983px] p-0 md:pt-[120px] lg:pt-[160px] relative flex flex-col items-center'
           id='countdown'
@@ -80,13 +125,13 @@ export default function Duc() {
             </div>
           </div>
         </section>
-        <section className='md:h-[400px] h-[900px] w-full' id='highlight'>
+        <section className='w-full md:h-[400px] h-[900px] max-w-screen-xl' id='highlight'>
           <Highlight />
         </section>
 
         <section className='relative flex flex-col items-center gap-16 mb-[80px] ' id='contact'>
           <TitleBox>Contact Person</TitleBox>
-          <ContactBox name='Qun Alfadrian' number='0819 0382 0746' />
+          <ContactBox name='Puji' number='0888 4115 467' />
         </section>
       </main>
     </>

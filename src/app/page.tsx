@@ -36,13 +36,13 @@ export default function Home() {
       <Modal isVisible={isModalVisible} onClose={handleCloseModal} />
       <main className='flex min-h-screen h-full flex-col items-center lg:pt-[100px] md:pt-[200px] pt-[150px] overflow-hidden gap-10 sm:gap-20 md:gap-32'>
         <section
-          className='container max-w-[983px] flex relative flex-col items-center w-full my-10 gap-2 md:gap-5'
+          className='container max-w-[983px] flex relative flex-col items-center w-full mt-10 gap-2 md:gap-5'
           id='hero'
         >
           <div>
             <Image
               className='translate-x-[1.5vw]'
-              src={'/assets/images/newhome.svg'}
+              src={'/assets/images/barulagi.png'}
               alt='hero-title'
               height={330}
               width={983}
@@ -67,14 +67,13 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className='absolute w-full h-screen -z-10  flex items-center justify-center'>
+        <div className='relative w-full -z-10  flex items-center justify-center'>
           <img
             src='/assets/images/bg-green.svg'
             alt='Background Image'
-            className='absolute object-cover  md:translate-y-[0px] lg:translate-y-[150px] xl:translate-y-[90px] hidden  md:flex  '
+            className='absolute object-cover hidden md:flex md:top-[-200px] lg:top-[-400px] '
           />
         </div>
-
         {/* waiting for sponsor */}
         <section className='h-[50px] w-full  '>{/* <Sponsor /> */}</section>
 
@@ -101,7 +100,8 @@ export default function Home() {
           </div> */}
         </section>
         <TitleBox>Highlight</TitleBox>
-        <section className='md:h-[400px] h-[1000px] w-full' id='highlight'>
+
+        <section className='w-full md:h-[400px] h-[900px] max-w-screen-xl' id='highlight'>
           <Highlight />
         </section>
 

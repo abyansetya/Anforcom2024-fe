@@ -2,39 +2,39 @@ import Image from 'next/image'
 
 export default function Highlight() {
   return (
-    <div className=' flex overflow-hidden justify-center w-full '>
+    <div className='flex w-full h-full justify-center items-center'>
       {/* desktop & tablet */}
-      <div className='absolute md:flex hidden overflow-hidden'>
+      <div className='md:flex hidden w-full min-w-fit h-full justify-center items-center relative'>
         <Image
-          className='w-[328px] h-[368px]  object-cover rotate-[20deg] translate-x-[-150px]'
+          className='w-[328px] h-[368px] object-cover absolute rotate-[20deg] left-0 translate-x-[-150px]'
           alt=''
           src={'/assets/images/polaroid.png'}
           width={328}
           height={368}
         />
         <Image
-          className='w-[328px] h-[368px] object-cover translate-x-[-200px]'
+          className='w-[328px] h-[368px] object-cover absolute translate-x-[125px] left-[0px]'
           alt=''
           src={'/assets/images/polaroid.png'}
           width={328}
           height={368}
         />
         <Image
-          className='w-[328px] h-[368px] object-cover rotate-[20deg] translate-x-[-240px]'
+          className='w-[328px] h-[368px] object-cover hidden lg:block  absolute rotate-[20deg] translate-x-[-60px] '
           alt=''
           src={'/assets/images/polaroid.png'}
           width={328}
           height={368}
         />
         <Image
-          className='w-[328px] h-[368px] object-cover rotate-[20deg] translate-x-[-290px]'
+          className='w-[328px] h-[368px] object-cover absolute rotate-[20deg] translate-x-[-240px] right-0  '
           alt=''
           src={'/assets/images/polaroid.png'}
           width={328}
           height={368}
         />
         <Image
-          className='w-[328px] h-[368px] object-cover  translate-x-[-300px]'
+          className='w-[328px] h-[368px] object-cover absolute rotate-[5deg] right-0 translate-x-[50px] '
           alt=''
           src={'/assets/images/polaroid.png'}
           width={328}

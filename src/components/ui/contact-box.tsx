@@ -17,7 +17,7 @@ export default function ContactBox({ name, number }: ContactBoxProps) {
           height={180}
         />
         <div className='sm:translate-x-0 translate-x-[50px]'>
-          <p className='text-xl md:text-[2rem] font-serif text-[#1C1259] tracking-[0.04rem] translate-x-[-70px] translate-y-[-5px] sm:translate-x-0'>
+          <p className='text-xl md:text-[2rem] font-serif mb-1 text-[#1C1259] tracking-[0.04rem] translate-x-[-70px] translate-y-[-5px] sm:translate-x-0'>
             {name}
           </p>
           <p className='font-extrabold  sm:text-2xl text-[15px] md:text-[2.5rem] font-serif text-[#1C1259] tracking-[0.05rem] sm:translate-x-0 translate-x-[-70px]'>

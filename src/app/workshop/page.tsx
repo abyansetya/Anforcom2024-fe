@@ -12,37 +12,35 @@ import bg from 'public/assets/images/bg-green.svg'
 export default function Event() {
   return (
     <>
-      <main className=' flex min-h-screen h-full flex-col items-center px-7 lg:pt-[100px] md:pt-[200px] pt-[150px] overflow-hidden gap-16 md:gap-32'>
-        <section className=' w-full' id='hero'>
-          <div className='absolute w-full left-0 right-0 '>
-            <Image
-              className='w-full'
-              src={'/assets/images/bootcamp.svg'}
-              alt='hero-title'
-              layout='responsive'
-              height={330}
-              width={1700}
-            />
-          </div>
-          <div className='relative flex flex-col items-center gap-11 md:pt-[250px] lg:pt-[300px] pt-[170px]'>
-            <p className='text-[#54534C] text-center font-normal text-base opacity-50 font-sans w-full md:w-2/3'>
-              A series of events and competitions organized by the Computer Science Students of Diponegoro University
-              that aims to introduce the Technology Culture to the community.
+      <main className='flex min-h-screen h-full flex-col items-center lg:pt-[100px] md:pt-[200px] pt-[150px] overflow-hidden gap-10 sm:gap-20 md:gap-32'>
+        <div className='w-full relative sm:h-[150px] h-[70px] max-w-screen-xl mb-0 pb-0'>
+          <img className=' w-full absolute ' src={'/assets/images/workshop.svg'} alt='hero-title' />
+        </div>
+        <section
+          className='container max-w-[983px] flex relative flex-col items-center w-full gap-2 md:gap-5'
+          id='hero'
+        >
+          <div className='flex flex-col items-center gap-6 md:gap-11'>
+            <p className='text-cwhite-9 text-center font-normal sm:mt-0 mt-[50px] text-xs sm:text-sm md:text-base opacity-50 font-sans w-full md:w-2/3'>
+              (DLC) adalah salah satu cabang lomba dari serangkaian kegiatan ANFORCOM 2024 yang dapat diikuti oleh SLTA
+              sederajat. Kegiatan ini bertujuan untuk mengasah kemampuan berpikir logis dan kemampuan problem solving
+              secara kompetitif. Kompetisi ini terdiri dari 2 tahap, yaitu tahap penyisihan berupa cerdas cermat dan
+              tahap final berupa Rally Games dan Competitive Programming.
             </p>
-            <div className='flex gap-6'>
-              <Link href='' target='_blank'>
+            <div className='flex gap-4 md:gap-6'>
+              <Link href='https://dashboard.anforcom.com' target='_blank'>
                 <Button color='primary' variant='default'>
-                  Daftar workshop
+                  Daftar Workshop
                 </Button>
               </Link>
             </div>
           </div>
         </section>
-        <div className='absolute w-full h-screen -z-10  flex items-center justify-center'>
+        <div className='relative w-full -z-10  flex items-center justify-center'>
           <img
             src='/assets/images/bg-green.svg'
             alt='Background Image'
-            className='absolute object-cover  md:translate-y-[0px] lg:translate-y-[150px] xl:translate-y-[90px] hidden  md:flex  '
+            className='absolute object-cover  hidden  md:flex top-[-400px] '
           />
         </div>
 
@@ -83,7 +81,7 @@ export default function Event() {
           </Link>
         </section>
 
-        <section className='md:h-[400px] h-[900px] w-full' id='highlight'>
+        <section className='w-full md:h-[400px] h-[900px] max-w-screen-xl' id='highlight'>
           <Highlight />
         </section>
 
