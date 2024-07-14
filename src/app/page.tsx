@@ -60,7 +60,7 @@ export default function Home() {
                 </Button>
               </Link>
               <Link href='#teaser'>
-                <Button color='primary' variant='outline'>
+                <Button className='hover:bg-[#f4aea7]' color='secondary2' variant='light'>
                   Teaser
                 </Button>
               </Link>

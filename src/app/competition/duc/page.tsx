@@ -93,7 +93,7 @@ export default function Duc() {
           id='countdown'
         >
           <TitleBox>Hitung Mundur</TitleBox>
-          <Countdown date={'2024-09-30T00:00:00+07:00'} />
+          <Countdown date={'2024-09-21T00:00:00+07:00'} />
           <Link href='https://dashboard.anforcom.com' target='_blank'>
             <Button>Daftar Sekarang</Button>
           </Link>

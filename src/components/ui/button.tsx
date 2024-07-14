@@ -16,7 +16,7 @@ const buttonVariants = cva(
       variant: {
         default: '',
         disable: 'bg-disabled text-disabled-foreground border border-disabled',
-        light: '',
+        light: 'hover:bg-cred5',
         outline:
           'bg-transparent border hover:bg-primary-hover active:bg-primary-pressed hover:text-white active:text-white',
         subtle: 'bg-transparent underline-offset-4 hover:underline'

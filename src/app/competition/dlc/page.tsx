@@ -10,7 +10,7 @@ export default function Dlc() {
   return (
     <>
       <main className='flex min-h-screen h-full flex-col items-center lg:pt-[100px] md:pt-[200px] pt-[150px] overflow-hidden gap-10 sm:gap-20 md:gap-32'>
-        <div className='w-full relative h-[150px] max-w-screen-xl mb-0 pb-0'>
+        <div className='w-full relative sm:h-[150px] h-[70px] max-w-screen-xl mb-0 pb-0'>
           <img className=' w-full absolute ' src={'/assets/images/dlc.svg'} alt='hero-title' />
         </div>
         <section
@@ -51,7 +51,7 @@ export default function Dlc() {
           id='countdown'
         >
           <TitleBox>Hitung Mundur</TitleBox>
-          <Countdown date={'2024-09-30T00:00:00+07:00'} />
+          <Countdown date={'2024-09-21T00:00:00+07:00'} />
           <Link href='https://dashboard.anforcom.com' target='_blank'>
             <Button>Daftar Sekarang</Button>
           </Link>
