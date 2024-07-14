@@ -47,7 +47,7 @@ export const questionData = [
   {
     question: 'Kapan workshop Anforcom 2024 dilaksanakan? Online atau offline?',
     answer:
-      'Untuk seminar dilaksanakan pada tanggal 21 September 2024 bersamaan dengan Final Day secara Offline di FSM UNDIP.'
+      'Untuk workshop dilaksanakan pada tanggal 21 September 2024 bersamaan dengan Final Day secara Offline di FSM UNDIP.'
   }
 ]
 

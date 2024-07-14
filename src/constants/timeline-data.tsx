@@ -45,7 +45,7 @@ export const timelineData = [
     icon: <IconBrandZoom className='absolute right-0 left-0 m-auto z-10 top-0 bottom-0' color='#fff' size={70} />
   },
   {
-    title: 'Final Day & Seminar',
+    title: 'Final Day & Workshop',
     startDate: '2023-09-21T00:00:00',
     endDate: null,
     icon: <IconTrophy className='absolute right-0 left-0 m-auto z-10 top-0 bottom-0' color='#fff' size={70} />
