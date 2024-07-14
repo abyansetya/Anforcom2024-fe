@@ -5,20 +5,21 @@ import Highlight from '@/components/highlight'
 import ContactBox from '@/components/ui/contact-box'
 import Countdown from '@/components/countdown'
 import Link from 'next/link'
+import Backgroundview from '@/components/ui/backgroundview'
 
 export default function Dlc() {
   return (
     <>
       <main className='flex min-h-screen h-full flex-col items-center lg:pt-[100px] md:pt-[200px] pt-[150px] overflow-hidden gap-10 sm:gap-20 md:gap-32'>
-        <div className='w-full relative sm:h-[150px] h-[70px] max-w-screen-xl mb-0 pb-0'>
-          <img className=' w-full absolute ' src={'/assets/images/dlc.svg'} alt='hero-title' />
+        <div className='w-full relative sm:h-[150px] h-[70px] max-w-[1700px] mb-0 pb-0'>
+          <img className=' w-full absolute ' src={'/assets/images/dlc (1).svg'} alt='hero-title' />
         </div>
         <section
           className='container max-w-[983px] flex relative flex-col items-center w-full gap-2 md:gap-5'
           id='hero'
         >
           <div className='flex flex-col items-center gap-6 md:gap-11'>
-            <p className='text-cwhite-9 text-center font-normal sm:mt-0 mt-[50px] text-xs sm:text-sm md:text-base opacity-50 font-sans w-full md:w-2/3'>
+            <p className='text-cgreen-9 text-center font-normal sm:mt-0 mt-[50px] xl:mt-[70px] text-xs sm:text-sm md:text-base opacity-50 font-sans w-full md:w-2/3'>
               (DLC) adalah salah satu cabang lomba dari serangkaian kegiatan ANFORCOM 2024 yang dapat diikuti oleh SLTA
               sederajat. Kegiatan ini bertujuan untuk mengasah kemampuan berpikir logis dan kemampuan problem solving
               secara kompetitif. Kompetisi ini terdiri dari 2 tahap, yaitu tahap penyisihan berupa cerdas cermat dan
@@ -38,13 +39,7 @@ export default function Dlc() {
             </div>
           </div>
         </section>
-        <div className='relative w-full -z-10  flex items-center justify-center'>
-          <img
-            src='/assets/images/bg-green.svg'
-            alt='Background Image'
-            className='absolute object-cover  hidden  md:flex top-[-400px] '
-          />
-        </div>
+        <Backgroundview />
 
         <section
           className='container max-w-[983px] p-0 md:pt-[120px] lg:pt-[160px] relative flex flex-col items-center'

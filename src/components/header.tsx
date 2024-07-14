@@ -48,7 +48,7 @@ const Header = ({ logo, links }: HeaderProps) => {
                       <Link href={subLink.href} key={subLink.href} className='flex'>
                         <Button
                           variant='subtle'
-                          className='flex-1 items-center justify-center hover:bg-cgreen-4 rounded-full p-2 !no-underline'
+                          className='flex-1 items-center justify-center text-cblue-5 hover:bg-cgreen-4 rounded-full p-2 !no-underline'
                         >
                           {subLink.label}
                         </Button>

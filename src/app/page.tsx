@@ -14,6 +14,8 @@ import Link from 'next/link'
 import Modal from '@/components/Modal'
 import Sponsor from '@/components/sponsor'
 import Linimasa from '@/components/linimasa'
+import Backgroundview from '@/components/ui/backgroundview'
+import { BackgroundImage } from 'framer/build/render/types/BackgroundImage'
 
 export default function Home() {
   const [isModalVisible, setIsModalVisible] = useState(false)
@@ -49,7 +51,7 @@ export default function Home() {
             />
           </div>
           <div className='flex flex-col items-center gap-6 md:gap-11'>
-            <p className='text-cwhite-9 text-center font-normal sm:mt-0 mt-[50px] text-xs sm:text-sm md:text-base opacity-50 font-sans w-full md:w-2/3'>
+            <p className='text-cgreen-9 text-center font-normal sm:mt-0 mt-[50px] text-xs sm:text-sm md:text-base opacity-50 font-sans w-full md:w-2/3'>
               A series of events and competitions organized by the Computer Science Students of Diponegoro University
               that aims to introduce the Technology Culture to the community.
             </p>
@@ -67,13 +69,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className='relative w-full -z-10  flex items-center justify-center'>
-          <img
-            src='/assets/images/bg-green.svg'
-            alt='Background Image'
-            className='absolute object-cover hidden md:flex md:top-[-200px] lg:top-[-400px] '
-          />
-        </div>
+
+        {/* background */}
+        <Backgroundview />
         {/* waiting for sponsor */}
         <section className='h-[50px] w-full  '>{/* <Sponsor /> */}</section>
 
@@ -111,7 +109,7 @@ export default function Home() {
             <div className='relative bg-cgreen-4 rounded-3xl p-3 md:p-6 w-full aspect-video'>
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[56px] md:max-w-[96px] right-16 md:-top-10 -top-4'
-                src={'/assets/images/teratai.svg'}
+                src={'/assets/images/terataipink.svg'}
                 alt='hero-title'
                 height={80}
                 width={80}
@@ -125,7 +123,7 @@ export default function Home() {
               />
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[50px] md:max-w-[84px] left-10 md:left-16 -bottom-4 md:-bottom-10'
-                src={'/assets/images/teratai.svg'}
+                src={'/assets/images/terataipink.svg'}
                 alt='hero-title'
                 height={128}
                 width={128}
@@ -170,10 +168,10 @@ export default function Home() {
         <section className='relative w-full mt-[100px]' id='regtutorial'>
           <div className='container max-w-[983px] w-full flex flex-col items-center gap-10 md:gap-20 '>
             <TitleBox>Tutorial Pendaftaran</TitleBox>
-            <div className='relative bg-cgreen-4 rounded-3xl p-3 md:p-6 w-full aspect-video'>
+            <div className='relative bg-cgreen-4 rounded-3xl p-3 md:p-4 w-full aspect-video'>
               <Image
-                className='translate-x-[1.5vw] absolute w-full max-w-[56px] md:max-w-[96px] right-16 md:-top-10 -top-4'
-                src={'/assets/images/teratai.svg'}
+                className='translate-x-[1.5vw] absolute w-full max-w-[56px] md:max-w-[96px] text-cred5 right-16 md:-top-10 -top-4'
+                src={'/assets/images/terataipink.svg'}
                 alt='hero-title'
                 height={128}
                 width={128}
@@ -187,7 +185,7 @@ export default function Home() {
               />
               <Image
                 className='translate-x-[1.5vw] absolute w-full max-w-[50px] md:max-w-[84px] left-10 md:left-16 -bottom-4 md:-bottom-10'
-                src={'/assets/images/teratai.svg'}
+                src={'/assets/images/terataipink.svg'}
                 alt='hero-title'
                 height={128}
                 width={128}

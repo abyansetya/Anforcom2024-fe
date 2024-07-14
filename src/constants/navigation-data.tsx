@@ -22,7 +22,7 @@ const navigationData = [
     ]
   },
   {
-    label: 'workshop',
+    label: 'Workshop',
     href: '/maintenance',
     icon: <IconUsers />
   }
