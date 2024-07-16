@@ -6,7 +6,8 @@ export const questionData = [
   },
   {
     question: 'Siapa saja yang dapat mengikuti lomba DUC dan DLC?',
-    answer: 'Untuk lomba DUC bisa diikuti oleh SMA/SMK sederajat dan Mahasiswa di seluruh Indonesia.'
+    answer:
+      'Untuk lomba DUC bisa diikuti oleh SMA/SMK sederajat dan Mahasiswa di seluruh Indonesia dan lomba DLC diikuti oleh siswa-siswi SMA/SMK sederajat.'
   },
   {
     question: 'Berapa jumlah minimal peserta masing-masing tim untuk mengikuti lomba di Anforcom 2024?',
