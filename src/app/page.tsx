@@ -100,6 +100,49 @@ export default function Home() {
 
         <section className='relative w-full ' id='teaser'>
           <div className='container max-w-[983px] w-full flex flex-col items-center gap-10 md:gap-20 '>
+            <TitleBox>Official Merchandise</TitleBox>
+            <div className='relative bg-cgreen-4 rounded-3xl p-3 md:p-4 w-full aspect-video'>
+              <Image
+                className='translate-x-[1.5vw] absolute w-full max-w-[56px] md:max-w-[96px] right-16 md:-top-10 -top-4'
+                src={'/assets/images/terataipink.svg'}
+                alt='hero-title'
+                height={80}
+                width={80}
+              />
+              <Image
+                className='translate-x-[1.5vw] absolute w-full max-w-[64px] md:max-w-[128px] -left-10 md:-top-10 -top-4'
+                src={'/assets/images/star.svg'}
+                alt='hero-title'
+                height={128}
+                width={128}
+              />
+              <Image
+                className='translate-x-[1.5vw] absolute w-full max-w-[50px] md:max-w-[84px] left-10 md:left-16 -bottom-4 md:-bottom-10'
+                src={'/assets/images/terataipink.svg'}
+                alt='hero-title'
+                height={128}
+                width={128}
+              />
+              <Image
+                className='translate-x-[3vw] absolute w-full max-w-[64px] md:max-w-[128px] -right-4 md:-right-9 -bottom-10'
+                src={'/assets/images/star.svg'}
+                alt='hero-title'
+                height={128}
+                width={128}
+              />
+
+              <img src='/assets/images/merch.png' alt='' />
+            </div>
+            <div className='w-full flex items-center justify-center font-serif '>
+              <Link href='https://bit.ly/POMerchANFORCOM2024' target='_blank'>
+                <Button>Pre Order Sekarang</Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className='relative w-full ' id='teaser'>
+          <div className='container max-w-[983px] w-full flex flex-col items-center gap-10 md:gap-20 '>
             <TitleBox>Video Teaser</TitleBox>
             <div className='relative bg-cgreen-4 rounded-3xl p-3 md:p-4 w-full aspect-video'>
               <Image
